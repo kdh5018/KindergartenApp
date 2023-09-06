@@ -20,6 +20,12 @@
 		768A712E2AA6ED3100C3C032 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 768A712D2AA6ED3100C3C032 /* RxRelay */; };
 		768A71302AA6ED3100C3C032 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 768A712F2AA6ED3100C3C032 /* RxSwift */; };
 		768A71322AA6EFF200C3C032 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71312AA6EFF200C3C032 /* ViewModel.swift */; };
+		768A71362AA6F86C00C3C032 /* Nibbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71352AA6F86C00C3C032 /* Nibbed.swift */; };
+		768A71382AA6F8A000C3C032 /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71372AA6F8A000C3C032 /* ReuseIdentifiable.swift */; };
+		768A713A2AA6F90400C3C032 /* KindergartenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 768A71392AA6F90400C3C032 /* KindergartenCell.xib */; };
+		768A713C2AA6F95000C3C032 /* KindergartenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A713B2AA6F95000C3C032 /* KindergartenCell.swift */; };
+		768A713E2AA7011E00C3C032 /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768A713D2AA7011E00C3C032 /* DetailVC.storyboard */; };
+		768A71402AA7015900C3C032 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A713F2AA7015900C3C032 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,12 @@
 		768A71262AA6EBFA00C3C032 /* KindergartenAPI+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KindergartenAPI+Rx.swift"; sourceTree = "<group>"; };
 		768A71282AA6EC1F00C3C032 /* KindergartenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenAPI.swift; sourceTree = "<group>"; };
 		768A71312AA6EFF200C3C032 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		768A71352AA6F86C00C3C032 /* Nibbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibbed.swift; sourceTree = "<group>"; };
+		768A71372AA6F8A000C3C032 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
+		768A71392AA6F90400C3C032 /* KindergartenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KindergartenCell.xib; sourceTree = "<group>"; };
+		768A713B2AA6F95000C3C032 /* KindergartenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenCell.swift; sourceTree = "<group>"; };
+		768A713D2AA7011E00C3C032 /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
+		768A713F2AA7015900C3C032 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,19 +82,41 @@
 		768A710F2AA6EAA300C3C032 /* KindergartenApp */ = {
 			isa = PBXGroup;
 			children = (
+				768A71342AA6F85E00C3C032 /* Extension */,
+				768A71332AA6F80000C3C032 /* View */,
 				768A71102AA6EAA300C3C032 /* AppDelegate.swift */,
 				768A71122AA6EAA300C3C032 /* SceneDelegate.swift */,
-				768A71142AA6EAA300C3C032 /* ViewController.swift */,
-				768A71162AA6EAA300C3C032 /* Main.storyboard */,
 				768A71192AA6EAA400C3C032 /* Assets.xcassets */,
 				768A711B2AA6EAA400C3C032 /* LaunchScreen.storyboard */,
 				768A711E2AA6EAA400C3C032 /* Info.plist */,
 				768A71242AA6EBC100C3C032 /* KindergartenResponse.swift */,
 				768A71262AA6EBFA00C3C032 /* KindergartenAPI+Rx.swift */,
 				768A71282AA6EC1F00C3C032 /* KindergartenAPI.swift */,
-				768A71312AA6EFF200C3C032 /* ViewModel.swift */,
 			);
 			path = KindergartenApp;
+			sourceTree = "<group>";
+		};
+		768A71332AA6F80000C3C032 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				768A71162AA6EAA300C3C032 /* Main.storyboard */,
+				768A71142AA6EAA300C3C032 /* ViewController.swift */,
+				768A713D2AA7011E00C3C032 /* DetailVC.storyboard */,
+				768A713F2AA7015900C3C032 /* DetailVC.swift */,
+				768A71312AA6EFF200C3C032 /* ViewModel.swift */,
+				768A71392AA6F90400C3C032 /* KindergartenCell.xib */,
+				768A713B2AA6F95000C3C032 /* KindergartenCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		768A71342AA6F85E00C3C032 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				768A71352AA6F86C00C3C032 /* Nibbed.swift */,
+				768A71372AA6F8A000C3C032 /* ReuseIdentifiable.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +185,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768A713E2AA7011E00C3C032 /* DetailVC.storyboard in Resources */,
 				768A711D2AA6EAA400C3C032 /* LaunchScreen.storyboard in Resources */,
 				768A711A2AA6EAA400C3C032 /* Assets.xcassets in Resources */,
 				768A71182AA6EAA300C3C032 /* Main.storyboard in Resources */,
+				768A713A2AA6F90400C3C032 /* KindergartenCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,9 +202,13 @@
 			files = (
 				768A71152AA6EAA300C3C032 /* ViewController.swift in Sources */,
 				768A71112AA6EAA300C3C032 /* AppDelegate.swift in Sources */,
+				768A71402AA7015900C3C032 /* DetailVC.swift in Sources */,
 				768A71252AA6EBC100C3C032 /* KindergartenResponse.swift in Sources */,
+				768A71362AA6F86C00C3C032 /* Nibbed.swift in Sources */,
+				768A71382AA6F8A000C3C032 /* ReuseIdentifiable.swift in Sources */,
 				768A71272AA6EBFA00C3C032 /* KindergartenAPI+Rx.swift in Sources */,
 				768A71292AA6EC1F00C3C032 /* KindergartenAPI.swift in Sources */,
+				768A713C2AA6F95000C3C032 /* KindergartenCell.swift in Sources */,
 				768A71132AA6EAA300C3C032 /* SceneDelegate.swift in Sources */,
 				768A71322AA6EFF200C3C032 /* ViewModel.swift in Sources */,
 			);

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="208" id="4oB-8I-Ome" customClass="KindergartenCell" customModule="KindergartenApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="208"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4oB-8I-Ome" id="slm-qh-MZL">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="208"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hm-J7-qVV">
+                        <rect key="frame" x="381.33333333333331" y="76" width="116.66666666666669" height="34.333333333333343"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="자세히 보기 &gt;"/>
+                        <connections>
+                            <action selector="viewMoreBtnClicked:" destination="4oB-8I-Ome" eventType="touchUpInside" id="5g7-RE-8eU"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Q86-LA-DqZ">
+                        <rect key="frame" x="10" y="33" width="84" height="142"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원명 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dd-yo-FX7">
+                                <rect key="frame" x="0.0" y="0.0" width="84" height="36.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-v1-ify">
+                                <rect key="frame" x="0.0" y="52.666666666666671" width="84" height="36.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-yc-aGr">
+                                <rect key="frame" x="0.0" y="105.33333333333334" width="84" height="36.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-Gu-9WY">
+                        <rect key="frame" x="99" y="33" width="126" height="142"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZs-T4-wmO">
+                                <rect key="frame" x="0.0" y="0.0" width="126" height="36.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsO-Zw-63Y">
+                                <rect key="frame" x="0.0" y="52.666666666666671" width="126" height="36.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 전화번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUV-tc-YRS">
+                                <rect key="frame" x="0.0" y="105.33333333333334" width="126" height="36.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4hm-J7-qVV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Sc0-Gu-9WY" secondAttribute="trailing" constant="10" id="62q-wh-UyN"/>
+                    <constraint firstAttribute="bottom" secondItem="Sc0-Gu-9WY" secondAttribute="bottom" constant="33" id="IbH-Nm-3pa"/>
+                    <constraint firstItem="4hm-J7-qVV" firstAttribute="top" secondItem="slm-qh-MZL" secondAttribute="top" constant="76" id="MdD-hG-HJr"/>
+                    <constraint firstAttribute="trailing" secondItem="4hm-J7-qVV" secondAttribute="trailing" id="TsS-cu-bHF"/>
+                    <constraint firstItem="Q86-LA-DqZ" firstAttribute="top" secondItem="slm-qh-MZL" secondAttribute="top" constant="33" id="UaC-5T-V29"/>
+                    <constraint firstItem="Sc0-Gu-9WY" firstAttribute="leading" secondItem="Q86-LA-DqZ" secondAttribute="trailing" constant="5" id="anl-wX-2SG"/>
+                    <constraint firstItem="Q86-LA-DqZ" firstAttribute="leading" secondItem="slm-qh-MZL" secondAttribute="leading" constant="10" id="ap7-Iu-Im1"/>
+                    <constraint firstItem="Sc0-Gu-9WY" firstAttribute="top" secondItem="slm-qh-MZL" secondAttribute="top" constant="33" id="nhL-yW-BIM"/>
+                    <constraint firstAttribute="bottom" secondItem="Q86-LA-DqZ" secondAttribute="bottom" constant="33" id="ydL-16-g0B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="kindergartenAddress" destination="wsO-Zw-63Y" id="dvA-Gq-tnl"/>
+                <outlet property="kindergartenCallNumber" destination="nUV-tc-YRS" id="W8U-er-LzB"/>
+                <outlet property="kindergartenName" destination="hZs-T4-wmO" id="Eqq-nF-nua"/>
+            </connections>
+            <point key="canvasLocation" x="320.61068702290078" y="-38.732394366197184"/>
+        </tableViewCell>
+    </objects>
+</document>
