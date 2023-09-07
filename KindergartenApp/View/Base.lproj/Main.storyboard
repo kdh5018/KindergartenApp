@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,26 +24,42 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-Gl-AXd">
-                                <rect key="frame" x="10" y="227" width="373" height="591"/>
+                                <rect key="frame" x="10" y="227.66666666666669" width="373" height="590.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-8o-buH">
-                                <rect key="frame" x="20" y="182.66666666666666" width="353" height="34.333333333333343"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-8o-buH">
+                                <rect key="frame" x="10" y="182.66666666666666" width="373" height="35"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUn-ag-HLx">
-                                        <rect key="frame" x="0.0" y="0.0" width="91" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqa-k3-Did">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="35"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                        <menu key="menu" id="jeg-NI-eL2">
+                                            <children>
+                                                <command title="Item 1" id="3Tc-OK-w4A"/>
+                                                <command title="Item 2" id="HR1-0Y-6Mb"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="시/도"/>
+                                        <connections>
+                                            <action selector="sidoBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05G-do-MlN"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="use-Bo-2hx">
-                                        <rect key="frame" x="131" y="0.0" width="91" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-Jk-IXI">
+                                        <rect key="frame" x="126" y="0.0" width="121" height="35"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                        <menu key="menu" id="7MT-eg-yei">
+                                            <children>
+                                                <command title="Item 1" id="YXy-3G-bft"/>
+                                                <command title="Item 2" id="Vvi-Xt-Chg"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="시/군/구"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEo-QC-cPy">
-                                        <rect key="frame" x="262" y="0.0" width="91" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <rect key="frame" x="252" y="0.0" width="121" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="유치원 찾기"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -52,11 +69,11 @@
                         <constraints>
                             <constraint firstItem="5C6-Gl-AXd" firstAttribute="top" secondItem="fbe-8o-buH" secondAttribute="bottom" constant="10" id="9DI-pa-Pad"/>
                             <constraint firstItem="fbe-8o-buH" firstAttribute="top" secondItem="LBW-sq-7OX" secondAttribute="bottom" constant="40" id="HgK-XS-hgM"/>
-                            <constraint firstItem="fbe-8o-buH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JMK-6C-wjU"/>
+                            <constraint firstItem="fbe-8o-buH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="JMK-6C-wjU"/>
                             <constraint firstItem="LBW-sq-7OX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Q1T-L3-bId"/>
                             <constraint firstItem="5C6-Gl-AXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="f82-lA-GOm"/>
                             <constraint firstItem="LBW-sq-7OX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kcy-M5-z9T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fbe-8o-buH" secondAttribute="trailing" constant="20" id="lBQ-dK-1cG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fbe-8o-buH" secondAttribute="trailing" constant="10" id="lBQ-dK-1cG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5C6-Gl-AXd" secondAttribute="bottom" id="nSf-ji-Xmf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5C6-Gl-AXd" secondAttribute="trailing" constant="10" id="soL-a8-E3m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBW-sq-7OX" secondAttribute="trailing" constant="10" id="uk5-zS-eDL"/>
@@ -64,7 +81,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mch-8U-Bul"/>
                     <connections>
+                        <outlet property="findKindergartenButton" destination="mEo-QC-cPy" id="8GC-hc-rHp"/>
                         <outlet property="myTableView" destination="5C6-Gl-AXd" id="jFw-Kh-2zr"/>
+                        <outlet property="sidoButton" destination="rqa-k3-Did" id="Cse-Jy-XJK"/>
+                        <outlet property="sigunguButton" destination="Nvb-Jk-IXI" id="fdr-As-eYc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
