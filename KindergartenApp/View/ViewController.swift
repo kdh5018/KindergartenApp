@@ -18,14 +18,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var sidoButton: UIButton!
     @IBOutlet weak var sigunguButton: UIButton!
     @IBOutlet weak var findKindergartenButton: UIButton!
+    @IBOutlet weak var clearButton: UIButton!
+    
+    
+
     
     var viewModel = ViewModel()
     
+    var disposeBag = DisposeBag()
+    
     var selectedSidoName : String?
+    
+    var kinderInfo: [KinderInfo] = []
     
     let sidos = ["서울특별시", "부산광역시", "대구광역시", "인천광역시", "광주광역시", "대전광역시", "울산광역시", "세종특별자치시", "경기도", "강원특별자치도", "충청북도", "충청남도", "전라북도", "전라남도", "경상북도", "경상남도", "제주특별자치도"]
     
-    // 딕셔너리로 지역코드를 같이 넣기?
     let seouls = ["강남구", "강동구", "강북구", "강서구", "관악구", "광진구", "구로구", "금천구", "노원구", "도봉구", "동대문구", "동작구", "마포구", "서대문구", "서초구", "성동구", "성북구", "송파구", "양천구", "영등포구", "용산구", "은평구", "종로구", "중구", "중랑구"]
     
     let busans = ["강서구", "금정구", "기장군", "남구", "동구", "동래구", "부산진구", "북구", "사상구", "사하구", "서구", "수영구", "연제구", "영도구", "중구", "해운대구"]
@@ -66,15 +73,17 @@ class ViewController: UIViewController {
         // 시/도 팝업버튼
         sidoPopupButton()
 
-        
         myTableView.register(KindergartenCell.uinib, forCellReuseIdentifier: KindergartenCell.reuseIdentifier)
         
         myTableView.dataSource = self
         myTableView.delegate = self
         myTableView.rowHeight = UITableView.automaticDimension
+        
+        // 뷰모델 이벤트 받기 - 뷰 - 뷰모델 바인딩 - 묶기
+        self.rxBindViewModel(viewModel: self.viewModel)
     }
     
-    // 시도 버튼으로 시도를 골라야지만 시군구 버튼을 누를 수 있게
+    // 시/도 버튼으로 시도를 골라야지만 시/군/구 버튼을 누를 수 있게
     @IBAction func sidoBtnClicked(_ sender: UIButton) {
         sidoPopupButton()
     }
@@ -193,14 +202,39 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func findKindergartenBtnClicked(_ sender: UIButton) {
+        viewModel.fetchKindergarten(27, 27140)
+    }
     
+    @IBAction func clearBtnClicked(_ sender: UIButton) {
+        
+    }
+    
+    
+}
 
-
+extension ViewController {
+    //MARK: - 뷰모델 바인딩 관련 VM -> View (Rx)
+    private func rxBindViewModel(viewModel: ViewModel) {
+        self.viewModel
+            .kinderInfo
+            .withUnretained(self)
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { vm, fetchedKindergarten in
+                vm.kinderInfo = fetchedKindergarten
+                vm.myTableView.reloadData()
+            })
+            .disposed(by: disposeBag)
+    }
 }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return kinderInfo.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -216,6 +250,10 @@ extension ViewController: UITableViewDataSource {
             self?.navigationController?.pushViewController(detailVC, animated: true)
         }
         
+        
+        let cellData: KinderInfo = self.kinderInfo[indexPath.row]
+        
+        cell.updateUI(cellData)
         
         return cell
     }
