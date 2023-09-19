@@ -27,6 +27,7 @@
 		768A713C2AA6F95000C3C032 /* KindergartenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A713B2AA6F95000C3C032 /* KindergartenCell.swift */; };
 		768A713E2AA7011E00C3C032 /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768A713D2AA7011E00C3C032 /* DetailVC.storyboard */; };
 		768A71402AA7015900C3C032 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A713F2AA7015900C3C032 /* DetailVC.swift */; };
+		76CF97552AB96CFA003A39B9 /* HyperLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF97542AB96CFA003A39B9 /* HyperLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		768A713B2AA6F95000C3C032 /* KindergartenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenCell.swift; sourceTree = "<group>"; };
 		768A713D2AA7011E00C3C032 /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
 		768A713F2AA7015900C3C032 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		76CF97542AB96CFA003A39B9 /* HyperLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				768A71352AA6F86C00C3C032 /* Nibbed.swift */,
 				768A71372AA6F8A000C3C032 /* ReuseIdentifiable.swift */,
+				76CF97542AB96CFA003A39B9 /* HyperLink.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				765C14DE2AB8097F0001A245 /* ErrorResponse.swift in Sources */,
 				768A71252AA6EBC100C3C032 /* KindergartenResponse.swift in Sources */,
 				768A71362AA6F86C00C3C032 /* Nibbed.swift in Sources */,
+				76CF97552AB96CFA003A39B9 /* HyperLink.swift in Sources */,
 				768A71382AA6F8A000C3C032 /* ReuseIdentifiable.swift in Sources */,
 				768A71272AA6EBFA00C3C032 /* KindergartenAPI+Rx.swift in Sources */,
 				768A71292AA6EC1F00C3C032 /* KindergartenAPI.swift in Sources */,

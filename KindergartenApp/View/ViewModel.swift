@@ -18,6 +18,8 @@ class ViewModel {
     
     var notifyRefreshEnded: PublishSubject<Void> = PublishSubject<Void>()
     
+    var induceKindergarten: PublishSubject<Bool> = PublishSubject<Bool>()
+    
     var disposeBag = DisposeBag()
     
     var kinderInfo : BehaviorRelay<[KinderInfo]> = BehaviorRelay<[KinderInfo]>(value: [])

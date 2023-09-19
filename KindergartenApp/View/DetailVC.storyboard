@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -63,46 +64,48 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-I4-Rw2">
-                                <rect key="frame" x="109" y="109" width="200" height="258"/>
+                                <rect key="frame" x="109" y="109" width="200" height="443"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zU-zf-b3Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공립/사립" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FM3-RI-gnx">
-                                        <rect key="frame" x="0.0" y="39" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="65.333333333333343" width="200" height="50.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 주소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-uN-wP5">
-                                        <rect key="frame" x="0.0" y="78" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="131" width="200" height="50.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-9164-5018" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAS-DA-tTT">
-                                        <rect key="frame" x="0.0" y="117" width="200" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-9164-5018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzr-5M-4sy">
+                                        <rect key="frame" x="0.0" y="196.33333333333331" width="200" height="50.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.naver.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMI-Io-fY1">
-                                        <rect key="frame" x="0.0" y="156" width="200" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="www.naver.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-I7-ReY">
+                                        <rect key="frame" x="0.0" y="261.66666666666669" width="200" height="50.333333333333314"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 ~ 18:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haw-Gt-e0j">
-                                        <rect key="frame" x="0.0" y="195" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="327" width="200" height="50.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김도훈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yI-38-6c6">
-                                        <rect key="frame" x="0.0" y="234" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="392.66666666666669" width="200" height="50.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -112,11 +115,11 @@
                                     <constraint firstAttribute="width" constant="200" id="X9C-xY-GIC"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wdX-gh-8Ck">
-                                <rect key="frame" x="5" y="453" width="383" height="170"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wdX-gh-8Ck">
+                                <rect key="frame" x="5" y="638" width="383" height="170"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="26A-ck-MaB">
-                                        <rect key="frame" x="0.0" y="0.0" width="379" height="18"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEw-rt-Y1P">
                                                 <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="18"/>
@@ -170,9 +173,12 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="h1i-wc-43v"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EdT-qe-qEk">
-                                        <rect key="frame" x="0.0" y="38" width="380" height="18"/>
+                                        <rect key="frame" x="0.0" y="35" width="380" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQR-zb-uRh">
                                                 <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="18"/>
@@ -228,7 +234,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="g78-Tl-cx7">
-                                        <rect key="frame" x="0.0" y="76" width="379" height="18"/>
+                                        <rect key="frame" x="0.0" y="70" width="379" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV4-NF-Eqe">
                                                 <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="18"/>
@@ -284,7 +290,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="owY-lL-DW9">
-                                        <rect key="frame" x="0.0" y="114" width="365.66666666666669" height="18"/>
+                                        <rect key="frame" x="0.0" y="105" width="365.66666666666669" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcD-RH-zIu">
                                                 <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="18"/>
@@ -340,7 +346,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="J2c-9A-wON">
-                                        <rect key="frame" x="0.0" y="152" width="381.66666666666669" height="18"/>
+                                        <rect key="frame" x="0.0" y="140" width="381.66666666666669" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdX-Fp-1hZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="18"/>
@@ -402,6 +408,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wdX-gh-8Ck" secondAttribute="trailing" constant="5" id="69z-f4-nMm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wdX-gh-8Ck" secondAttribute="bottom" constant="10" id="A29-bA-GtD"/>
                             <constraint firstItem="bXQ-I4-Rw2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Ftg-Gp-4o2"/>
                             <constraint firstItem="fiH-Wk-JvH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="PLc-wg-Jon"/>
                             <constraint firstItem="wdX-gh-8Ck" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="gEh-0S-vfR"/>
@@ -410,10 +417,42 @@
                             <constraint firstItem="fiH-Wk-JvH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="wdZ-pv-GFO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="class3" destination="Z5U-Bh-M3d" id="30m-K1-IRL"/>
+                        <outlet property="class4" destination="H6f-LM-JHo" id="n5K-YA-gaZ"/>
+                        <outlet property="class5" destination="lCc-tB-ald" id="Coy-TW-hlr"/>
+                        <outlet property="classMix" destination="fNW-Fw-MMq" id="Sx2-av-NR7"/>
+                        <outlet property="classSpecial" destination="qGZ-jw-2qA" id="5vV-Ni-oCU"/>
+                        <outlet property="kindergartenAddress" destination="d9s-uN-wP5" id="xlt-OH-xUC"/>
+                        <outlet property="kindergartenBossName" destination="9yI-38-6c6" id="ugh-TO-f3C"/>
+                        <outlet property="kindergartenCallNumber" destination="xzr-5M-4sy" id="4e0-no-AUx"/>
+                        <outlet property="kindergartenHomepage" destination="9q9-I7-ReY" id="JNM-0Y-qfa"/>
+                        <outlet property="kindergartenName" destination="6zU-zf-b3Q" id="0v9-fX-KxK"/>
+                        <outlet property="kindergartenTime" destination="haw-Gt-e0j" id="PgS-ih-QAA"/>
+                        <outlet property="peopleCount3" destination="kJx-1S-pHd" id="z71-q8-jgb"/>
+                        <outlet property="peopleCount4" destination="pd1-Qt-ey8" id="xGX-hE-JN9"/>
+                        <outlet property="peopleCount5" destination="N0E-lu-lMI" id="4Z8-K9-KIs"/>
+                        <outlet property="peopleCountMix" destination="CXn-JO-Fa4" id="gjh-xD-VeU"/>
+                        <outlet property="peopleCountSpecial" destination="zwR-9f-8We" id="Ynf-w3-doL"/>
+                        <outlet property="publicPrivate" destination="FM3-RI-gnx" id="TER-Tc-D1t"/>
+                        <outlet property="recruitmentClass3" destination="ai7-gB-KqO" id="xjG-y0-e7c"/>
+                        <outlet property="recruitmentClass4" destination="Q8w-DE-Ug7" id="0eV-v3-lSU"/>
+                        <outlet property="recruitmentClass5" destination="qB0-Yq-e5b" id="R8W-xC-P1s"/>
+                        <outlet property="recruitmentClassMix" destination="ho8-RG-xFJ" id="WlA-c9-UpW"/>
+                        <outlet property="recruitmentClassSpecial" destination="doZ-pM-peW" id="qCd-Me-FlF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

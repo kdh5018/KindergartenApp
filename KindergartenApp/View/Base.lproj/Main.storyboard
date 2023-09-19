@@ -77,9 +77,6 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="초기화"/>
-                                        <connections>
-                                            <action selector="clearBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPQ-XA-mt3"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -101,7 +98,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mch-8U-Bul"/>
                     <connections>
-                        <outlet property="clearButton" destination="vKp-Zy-U6D" id="ld3-9V-Hyg"/>
                         <outlet property="findKindergartenButton" destination="mEo-QC-cPy" id="8GC-hc-rHp"/>
                         <outlet property="myTableView" destination="5C6-Gl-AXd" id="jFw-Kh-2zr"/>
                         <outlet property="sidoButton" destination="rqa-k3-Did" id="Cse-Jy-XJK"/>

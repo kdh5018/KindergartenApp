@@ -21,12 +21,13 @@ class KindergartenCell: UITableViewCell {
         
     }
     
-    var buttonClicked: (() -> Void)?
+    var buttonClicked: (() -> Void)? = nil
     
+    // DetailVC로 가는 버튼
     @IBAction func viewMoreBtnClicked(_ sender: UIButton) {
         print(#fileID, #function, #line, "- button clicked")
         buttonClicked?()
-
+        
     }
     
     func updateUI(_ cellData: KinderInfo) {
