@@ -12,32 +12,23 @@ import RxCocoa
 
 class ViewModel {
     
-    var notifySearchDataNotFound: PublishSubject<Bool> = PublishSubject<Bool>()
+    var kinderInfo : BehaviorRelay<[KinderInfo]> = BehaviorRelay<[KinderInfo]>(value: [])
     
     var notifyErrorOccured: PublishSubject<String> = PublishSubject<String>()
     
-    var notifyRefreshEnded: PublishSubject<Void> = PublishSubject<Void>()
+    // 초기 화면 지역선택 유도 뷰
+    var induceKindergarten = BehaviorRelay(value: true)
     
-    var induceKindergarten: PublishSubject<Bool> = PublishSubject<Bool>()
+    // 지역 재선택시 테이블뷰셀 스크롤 위로 올리기
+    var scrollToTop: PublishSubject<Void> = PublishSubject<Void>()
     
     var disposeBag = DisposeBag()
     
-    var kinderInfo : BehaviorRelay<[KinderInfo]> = BehaviorRelay<[KinderInfo]>(value: [])
-    
-    init() {
-//        KindergartenAPI.fetchKindergarten(sidoCode: 27, sggCode: 27140)
-//            .observe(on: MainScheduler.instance)
-//            .withUnretained(self)
-//            .subscribe(onNext: { vm, result in
-//                print(#fileID, #function, #line, "- result: \(result)")
-//            })
-//            .disposed(by: disposeBag)
-    }
-    
+    // 유치원 데이터 불러오기
     func fetchKindergarten(_ sidoCode: Int, _ ssgCode: Int) {
         
         Observable.just(())
-            .delay(RxTimeInterval.milliseconds(700), scheduler: MainScheduler.instance)
+            .delay(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .flatMapLatest{
                 KindergartenAPI.fetchKindergarten(sidoCode: sidoCode, sggCode: ssgCode)
             }
@@ -45,15 +36,17 @@ class ViewModel {
                 self.handleError(error)
                 print(#fileID, #function, #line, "- 뷰모델 패치 오류")
             }, onCompleted: {
-                self.notifyRefreshEnded.onNext(())
                 print(#fileID, #function, #line, "- 뷰모델 패치 성공")
             })
             .subscribe(onNext: { (response: KindergartenResponse) in
                 guard let kinderInfo = response.kinderInfo else { return }
                 self.kinderInfo.accept(kinderInfo)
-                print(#fileID, #function, #line, "- kinderInfo: \(kinderInfo)")
+                self.scrollToTop.onNext(())
+                self.induceKindergarten.accept(false)
             }).disposed(by: disposeBag)
     }
+    
+    
     
     fileprivate func handleError(_ error: Error) {
         
@@ -67,7 +60,6 @@ class ViewModel {
         switch apiError {
         case .noContentsError:
             print("컨텐츠 없음")
-            self.notifySearchDataNotFound.onNext(true)
         case .unauthorizedError:
             print("인증 안됨")
         case .decodingError:

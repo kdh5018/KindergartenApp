@@ -84,12 +84,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-9164-5018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzr-5M-4sy">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="010-9164-5018" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gyR-rY-UdY">
                                         <rect key="frame" x="0.0" y="196.33333333333331" width="200" height="50.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                    </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="www.naver.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-I7-ReY">
                                         <rect key="frame" x="0.0" y="261.66666666666669" width="200" height="50.333333333333314"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -425,7 +427,7 @@
                         <outlet property="classSpecial" destination="qGZ-jw-2qA" id="5vV-Ni-oCU"/>
                         <outlet property="kindergartenAddress" destination="d9s-uN-wP5" id="xlt-OH-xUC"/>
                         <outlet property="kindergartenBossName" destination="9yI-38-6c6" id="ugh-TO-f3C"/>
-                        <outlet property="kindergartenCallNumber" destination="xzr-5M-4sy" id="4e0-no-AUx"/>
+                        <outlet property="kindergartenCallNumber" destination="gyR-rY-UdY" id="T4I-5C-F5Y"/>
                         <outlet property="kindergartenHomepage" destination="9q9-I7-ReY" id="JNM-0Y-qfa"/>
                         <outlet property="kindergartenName" destination="6zU-zf-b3Q" id="0v9-fX-KxK"/>
                         <outlet property="kindergartenTime" destination="haw-Gt-e0j" id="PgS-ih-QAA"/>

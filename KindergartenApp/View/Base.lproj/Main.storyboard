@@ -24,11 +24,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-Gl-AXd">
-                                <rect key="frame" x="10" y="242.66666666666669" width="373" height="575.33333333333326"/>
+                                <rect key="frame" x="10" y="197.66666666666669" width="373" height="620.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-HH-UXW">
-                                <rect key="frame" x="10" y="152.66666666666666" width="373" height="80"/>
+                                <rect key="frame" x="10" y="152.66666666666666" width="373" height="35"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-8o-buH">
                                         <rect key="frame" x="1" y="0.0" width="371" height="35"/>
@@ -58,6 +58,7 @@
                                                     </children>
                                                 </menu>
                                                 <state key="normal" title="시/군/구"/>
+                                                <state key="selected" title="시/군/구"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEo-QC-cPy">
                                                 <rect key="frame" x="284" y="0.0" width="87" height="35"/>
@@ -70,14 +71,6 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKp-Zy-U6D">
-                                        <rect key="frame" x="0.0" y="45" width="373" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="373" id="Zxi-1H-U10"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="초기화"/>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>

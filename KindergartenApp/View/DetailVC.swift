@@ -14,7 +14,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var kindergartenName: UILabel!
     @IBOutlet weak var publicPrivate: UILabel!
     @IBOutlet weak var kindergartenAddress: UILabel!
-    @IBOutlet weak var kindergartenCallNumber: UILabel!
+    @IBOutlet weak var kindergartenCallNumber: UITextView!
     @IBOutlet weak var kindergartenHomepage: UITextView!
     @IBOutlet weak var kindergartenTime: UILabel!
     @IBOutlet weak var kindergartenBossName: UILabel!
@@ -88,6 +88,9 @@ class DetailVC: UIViewController {
             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(callPhoneNumber(_:)))
             
             kindergartenCallNumber.isUserInteractionEnabled = true
+            kindergartenCallNumber.isEditable = false
+            kindergartenCallNumber.isSelectable = true
+            kindergartenCallNumber.dataDetectorTypes = .phoneNumber
             kindergartenCallNumber.addGestureRecognizer(tapGestureRecognizer)
         }
         
