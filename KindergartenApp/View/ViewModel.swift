@@ -19,6 +19,8 @@ class ViewModel {
     // 초기 화면 지역선택 유도 뷰
     var induceKindergarten = BehaviorRelay(value: true)
     
+    var isLoading = BehaviorRelay(value: false)
+    
     // 지역 재선택시 테이블뷰셀 스크롤 위로 올리기
     var scrollToTop: PublishSubject<Void> = PublishSubject<Void>()
     
@@ -27,8 +29,11 @@ class ViewModel {
     // 유치원 데이터 불러오기
     func fetchKindergarten(_ sidoCode: Int, _ ssgCode: Int) {
         
+        self.isLoading.accept(true)
+        self.induceKindergarten.accept(false)
+        
         Observable.just(())
-            .delay(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
+            .delay(RxTimeInterval.milliseconds(1000), scheduler: MainScheduler.instance)
             .flatMapLatest{
                 KindergartenAPI.fetchKindergarten(sidoCode: sidoCode, sggCode: ssgCode)
             }
@@ -42,7 +47,8 @@ class ViewModel {
                 guard let kinderInfo = response.kinderInfo else { return }
                 self.kinderInfo.accept(kinderInfo)
                 self.scrollToTop.onNext(())
-                self.induceKindergarten.accept(false)
+                
+                self.isLoading.accept(false)
             }).disposed(by: disposeBag)
     }
     

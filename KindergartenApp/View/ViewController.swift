@@ -84,17 +84,29 @@ class ViewController: UIViewController {
         return view
     }()
     
+    // 선택 후 로딩
+    lazy var indicator: UIActivityIndicatorView = {
+        let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: .large)
+        indicator.color = UIColor.systemGray
+        indicator.startAnimating()
+        indicator.center = self.myTableView.center
+        indicator.frame = CGRect(x: 0, y: 0, width: myTableView.bounds.width, height: 100)
+        return indicator
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 시/도 팝업버튼
         sidoPopupButton()
 
-        myTableView.register(KindergartenCell.uinib, forCellReuseIdentifier: KindergartenCell.reuseIdentifier)
+        self.myTableView.register(KindergartenCell.uinib, forCellReuseIdentifier: KindergartenCell.reuseIdentifier)
         
-        myTableView.dataSource = self
-        myTableView.delegate = self
-        myTableView.rowHeight = UITableView.automaticDimension
+        self.myTableView.dataSource = self
+        self.myTableView.delegate = self
+        self.myTableView.rowHeight = UITableView.automaticDimension
+        
+        self.myTableView.tableFooterView = indicator
         
         // 뷰모델 이벤트 받기 - 뷰 - 뷰모델 바인딩 - 묶기
         self.rxBindViewModel(viewModel: self.viewModel)
@@ -905,6 +917,15 @@ extension ViewController {
                 self.myTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
                 self.myTableView.reloadData()
             }).disposed(by: disposeBag)
+        
+        // 지역 선택 후 보여주기 전까지 로딩 UI 보여주기
+        self.viewModel
+            .isLoading
+            .withUnretained(self)
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { mainVC, isLoading in
+                self.myTableView.tableFooterView = isLoading ? self.indicator : nil
+            })
         
     }
 }
