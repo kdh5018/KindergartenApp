@@ -14,9 +14,9 @@ extension KindergartenAPI {
     
     static func fetchKindergarten(sidoCode: Int, sggCode: Int) -> Observable<KindergartenResponse> {
         
-        let baseURL = "https://e-childschoolinfo.moe.go.kr/api/notice/basicInfo2.do?"
+        let baseURL = Bundle.main.infoDictionary?["baseURL"] as? String ?? ""
         
-        let apiKey = "key=d926d9b977504eda93848fec663b4a5d"
+        let apiKey = Bundle.main.infoDictionary?["apiKey"] as? String ?? ""
         
         let urlString = baseURL + apiKey + "&sidoCode=\(sidoCode)" + "&sggCode=\(sggCode)"
         

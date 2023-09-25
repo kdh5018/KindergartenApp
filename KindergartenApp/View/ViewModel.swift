@@ -49,7 +49,8 @@ class ViewModel {
                 self.scrollToTop.onNext(())
                 
                 self.isLoading.accept(false)
-            }).disposed(by: disposeBag)
+            })
+                .disposed(by: disposeBag)
     }
     
     

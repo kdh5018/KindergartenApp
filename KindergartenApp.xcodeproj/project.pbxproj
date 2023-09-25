@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		765C14DE2AB8097F0001A245 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C14DD2AB8097F0001A245 /* ErrorResponse.swift */; };
+		767E6F172AC1538200F7A9C3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 767E6F162AC1538200F7A9C3 /* Alamofire */; };
 		768A71112AA6EAA300C3C032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71102AA6EAA300C3C032 /* AppDelegate.swift */; };
 		768A71132AA6EAA300C3C032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71122AA6EAA300C3C032 /* SceneDelegate.swift */; };
 		768A71152AA6EAA300C3C032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71142AA6EAA300C3C032 /* ViewController.swift */; };
@@ -27,11 +28,11 @@
 		768A713C2AA6F95000C3C032 /* KindergartenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A713B2AA6F95000C3C032 /* KindergartenCell.swift */; };
 		768A713E2AA7011E00C3C032 /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768A713D2AA7011E00C3C032 /* DetailVC.storyboard */; };
 		768A71402AA7015900C3C032 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A713F2AA7015900C3C032 /* DetailVC.swift */; };
-		76CF97552AB96CFA003A39B9 /* HyperLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF97542AB96CFA003A39B9 /* HyperLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		765C14DD2AB8097F0001A245 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		767E6F142AC1505B00F7A9C3 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		768A710D2AA6EAA300C3C032 /* KindergartenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindergartenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768A71102AA6EAA300C3C032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768A71122AA6EAA300C3C032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		768A713B2AA6F95000C3C032 /* KindergartenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenCell.swift; sourceTree = "<group>"; };
 		768A713D2AA7011E00C3C032 /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
 		768A713F2AA7015900C3C032 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		76CF97542AB96CFA003A39B9 /* HyperLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768A71302AA6ED3100C3C032 /* RxSwift in Frameworks */,
+				767E6F172AC1538200F7A9C3 /* Alamofire in Frameworks */,
 				768A712E2AA6ED3100C3C032 /* RxRelay in Frameworks */,
 				768A712C2AA6ED3100C3C032 /* RxCocoa in Frameworks */,
 			);
@@ -113,6 +114,7 @@
 				768A71192AA6EAA400C3C032 /* Assets.xcassets */,
 				768A711B2AA6EAA400C3C032 /* LaunchScreen.storyboard */,
 				768A711E2AA6EAA400C3C032 /* Info.plist */,
+				767E6F142AC1505B00F7A9C3 /* Config.xcconfig */,
 			);
 			path = KindergartenApp;
 			sourceTree = "<group>";
@@ -136,7 +138,6 @@
 			children = (
 				768A71352AA6F86C00C3C032 /* Nibbed.swift */,
 				768A71372AA6F8A000C3C032 /* ReuseIdentifiable.swift */,
-				76CF97542AB96CFA003A39B9 /* HyperLink.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -161,6 +162,7 @@
 				768A712B2AA6ED3100C3C032 /* RxCocoa */,
 				768A712D2AA6ED3100C3C032 /* RxRelay */,
 				768A712F2AA6ED3100C3C032 /* RxSwift */,
+				767E6F162AC1538200F7A9C3 /* Alamofire */,
 			);
 			productName = KindergartenApp;
 			productReference = 768A710D2AA6EAA300C3C032 /* KindergartenApp.app */;
@@ -192,6 +194,7 @@
 			mainGroup = 768A71042AA6EAA300C3C032;
 			packageReferences = (
 				768A712A2AA6ED3000C3C032 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				767E6F152AC1538200F7A9C3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 768A710E2AA6EAA300C3C032 /* Products */;
 			projectDirPath = "";
@@ -228,7 +231,6 @@
 				765C14DE2AB8097F0001A245 /* ErrorResponse.swift in Sources */,
 				768A71252AA6EBC100C3C032 /* KindergartenResponse.swift in Sources */,
 				768A71362AA6F86C00C3C032 /* Nibbed.swift in Sources */,
-				76CF97552AB96CFA003A39B9 /* HyperLink.swift in Sources */,
 				768A71382AA6F8A000C3C032 /* ReuseIdentifiable.swift in Sources */,
 				768A71272AA6EBFA00C3C032 /* KindergartenAPI+Rx.swift in Sources */,
 				768A71292AA6EC1F00C3C032 /* KindergartenAPI.swift in Sources */,
@@ -262,6 +264,7 @@
 /* Begin XCBuildConfiguration section */
 		768A711F2AA6EAA400C3C032 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767E6F142AC1505B00F7A9C3 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -322,6 +325,7 @@
 		};
 		768A71202AA6EAA400C3C032 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767E6F142AC1505B00F7A9C3 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -376,6 +380,7 @@
 		};
 		768A71222AA6EAA400C3C032 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767E6F142AC1505B00F7A9C3 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -407,6 +412,7 @@
 		};
 		768A71232AA6EAA400C3C032 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767E6F142AC1505B00F7A9C3 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +466,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		767E6F152AC1538200F7A9C3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		768A712A2AA6ED3000C3C032 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -471,6 +485,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		767E6F162AC1538200F7A9C3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 767E6F152AC1538200F7A9C3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		768A712B2AA6ED3100C3C032 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 768A712A2AA6ED3000C3C032 /* XCRemoteSwiftPackageReference "RxSwift" */;

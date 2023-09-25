@@ -47,9 +47,9 @@
                                                     <action selector="sidoBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05G-do-MlN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-Jk-IXI">
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-Jk-IXI">
                                                 <rect key="frame" x="142" y="0.0" width="87" height="35"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <menu key="menu" id="7MT-eg-yei">
                                                     <children>
@@ -57,8 +57,9 @@
                                                         <command title="Item 2" id="Vvi-Xt-Chg"/>
                                                     </children>
                                                 </menu>
-                                                <state key="normal" title="시/군/구"/>
-                                                <state key="selected" title="시/군/구"/>
+                                                <state key="normal" title="시/군/구">
+                                                    <color key="titleColor" systemColor="tintColor"/>
+                                                </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEo-QC-cPy">
                                                 <rect key="frame" x="284" y="0.0" width="87" height="35"/>
@@ -123,6 +124,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
