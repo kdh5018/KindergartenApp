@@ -14,7 +14,7 @@
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="KindergartenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBW-sq-7OX">
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-Gl-AXd">
-                                <rect key="frame" x="10" y="197.66666666666669" width="373" height="620.33333333333326"/>
+                                <rect key="frame" x="10" y="197.66666666666669" width="373" height="648.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-HH-UXW">
@@ -74,25 +74,37 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULS-Qu-Kig">
+                                <rect key="frame" x="10" y="854" width="373" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ULS-Qu-Kig" firstAttribute="leading" secondItem="5C6-Gl-AXd" secondAttribute="leading" id="FCr-St-mVd"/>
                             <constraint firstItem="5C6-Gl-AXd" firstAttribute="top" secondItem="AA4-HH-UXW" secondAttribute="bottom" constant="10" id="LHj-hO-OwJ"/>
                             <constraint firstItem="LBW-sq-7OX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Q1T-L3-bId"/>
                             <constraint firstItem="AA4-HH-UXW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Zkx-ty-wkZ"/>
+                            <constraint firstItem="ULS-Qu-Kig" firstAttribute="trailing" secondItem="5C6-Gl-AXd" secondAttribute="trailing" id="e0E-zh-GQs"/>
                             <constraint firstItem="AA4-HH-UXW" firstAttribute="top" secondItem="LBW-sq-7OX" secondAttribute="bottom" constant="10" id="eVT-U9-MRN"/>
                             <constraint firstItem="5C6-Gl-AXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="f82-lA-GOm"/>
+                            <constraint firstItem="ULS-Qu-Kig" firstAttribute="top" secondItem="5C6-Gl-AXd" secondAttribute="bottom" constant="8" symbolic="YES" id="hpj-dL-NCc"/>
                             <constraint firstItem="LBW-sq-7OX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kcy-M5-z9T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5C6-Gl-AXd" secondAttribute="bottom" id="nSf-ji-Xmf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5C6-Gl-AXd" secondAttribute="bottom" constant="20" id="nSf-ji-Xmf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5C6-Gl-AXd" secondAttribute="trailing" constant="10" id="soL-a8-E3m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBW-sq-7OX" secondAttribute="trailing" constant="10" id="uk5-zS-eDL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AA4-HH-UXW" secondAttribute="trailing" constant="10" id="zWM-sb-F9E"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mch-8U-Bul"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="900"/>
                     <connections>
                         <outlet property="findKindergartenButton" destination="mEo-QC-cPy" id="8GC-hc-rHp"/>
+                        <outlet property="guideLabel" destination="ULS-Qu-Kig" id="oXo-3M-vfs"/>
                         <outlet property="myTableView" destination="5C6-Gl-AXd" id="jFw-Kh-2zr"/>
                         <outlet property="sidoButton" destination="rqa-k3-Did" id="Cse-Jy-XJK"/>
                         <outlet property="sigunguButton" destination="Nvb-Jk-IXI" id="fdr-As-eYc"/>
@@ -100,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.7251908396945" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="1054.1984732824426" y="-34.507042253521128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lSo-ba-69e">

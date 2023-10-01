@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sigunguButton: UIButton!
     @IBOutlet weak var findKindergartenButton: UIButton!
     
+    @IBOutlet weak var guideLabel: UILabel!
+    
     var viewModel = ViewModel()
     
     var disposeBag = DisposeBag()
@@ -89,7 +91,6 @@ class ViewController: UIViewController {
         let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: .large)
         indicator.color = UIColor.systemGray
         indicator.startAnimating()
-        indicator.center = self.myTableView.center
         indicator.frame = CGRect(x: 0, y: 0, width: myTableView.bounds.width, height: 100)
         return indicator
     }()
@@ -112,6 +113,9 @@ class ViewController: UIViewController {
         self.myTableView.rowHeight = UITableView.automaticDimension
         
         self.myTableView.tableFooterView = indicator
+        
+        self.guideLabel.text = "해당 정보는 교육부 - 유치원알리미에서 제공하는 정보입니다. \n보다 자세한 정보는 희망하는 유치원에 문의하시기 바랍니다."
+        self.guideLabel.numberOfLines = 2
         
         print(#fileID, #function, #line, "- selectedSidoName: \(selectedSidoName)")
         
@@ -245,6 +249,12 @@ class ViewController: UIViewController {
     
     // 내가 지정한 지역코드가 들어간 유치원 찾기 버튼
     @IBAction func findKindergartenBtnClicked(_ sender: UIButton) {
+        
+//        viewModel.isLoading.accept(true)
+        
+        if selectedSidoName != nil {
+            sigunguButton.isEnabled = true
+        }
 
         switch selectedSidoName {
         case "서울특별시":

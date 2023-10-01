@@ -21,9 +21,9 @@
 			</array>
 		</dict>
 	</dict>
-	<key>baseURL</key>
-	<string>${baseURL}</string>
 	<key>apiKey</key>
 	<string>${apiKey}</string>
+	<key>baseURL</key>
+	<string>${baseURL}</string>
 </dict>
 </plist>

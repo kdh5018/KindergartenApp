@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  KindergartenApp
+//
+//  Created by 김도훈 on 2023/09/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+baseURL=https:/$()/e-childschoolinfo.moe.go.kr/api/notice/basicInfo2.do?
+
+apiKey=key=d926d9b977504eda93848fec663b4a5d

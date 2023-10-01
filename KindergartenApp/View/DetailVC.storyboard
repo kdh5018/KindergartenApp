@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -64,28 +65,31 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-I4-Rw2">
-                                <rect key="frame" x="109" y="109" width="200" height="443"/>
+                                <rect key="frame" x="109" y="109" width="200" height="258"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zU-zf-b3Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="v2b-LX-f5V"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공립/사립" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FM3-RI-gnx">
-                                        <rect key="frame" x="0.0" y="65.333333333333343" width="200" height="50.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="39" width="200" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 주소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-uN-wP5">
-                                        <rect key="frame" x="0.0" y="131" width="200" height="50.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="78" width="200" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="010-9164-5018" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gyR-rY-UdY">
-                                        <rect key="frame" x="0.0" y="196.33333333333331" width="200" height="50.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="117" width="200" height="24"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -93,7 +97,7 @@
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="www.naver.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-I7-ReY">
-                                        <rect key="frame" x="0.0" y="261.66666666666669" width="200" height="50.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="156" width="200" height="24"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -101,13 +105,13 @@
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 ~ 18:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haw-Gt-e0j">
-                                        <rect key="frame" x="0.0" y="327" width="200" height="50.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="195" width="200" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김도훈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yI-38-6c6">
-                                        <rect key="frame" x="0.0" y="392.66666666666669" width="200" height="50.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="234" width="200" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -117,285 +121,65 @@
                                     <constraint firstAttribute="width" constant="200" id="X9C-xY-GIC"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wdX-gh-8Ck">
-                                <rect key="frame" x="5" y="638" width="383" height="170"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-Zk-6ku">
+                                <rect key="frame" x="10" y="782" width="373" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Cgk-Jw-AJk"/>
+                                    <constraint firstAttribute="width" constant="373" id="Pnr-mN-qoL"/>
+                                </constraints>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lie-qP-SPD">
+                                <rect key="frame" x="0.0" y="559" width="393" height="219"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="26A-ck-MaB">
-                                        <rect key="frame" x="0.0" y="0.0" width="379" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="gy7-zo-U5m">
+                                        <rect key="frame" x="51" y="10" width="259.66666666666669" height="156"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEw-rt-Y1P">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="18"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9M-JH-Mau">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 학급수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szg-cP-6mZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 학급수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa2-5K-JTZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5U-Bh-M3d">
-                                                        <rect key="frame" x="90.333333333333329" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhs-cr-V5o">
+                                                        <rect key="frame" x="174.66666666666666" y="0.0" width="32.333333333333343" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jI2-vz-45M">
-                                                <rect key="frame" x="121.33333333333333" y="0.0" width="136.33333333333337" height="18"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8sm-49-EJ7">
+                                                <rect key="frame" x="0.0" y="60" width="259.66666666666669" height="36"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 모집 정원수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xb4-IH-pBr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 모집정원수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTe-HC-a1I">
+                                                        <rect key="frame" x="0.0" y="0.0" width="226.33333333333334" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-gB-KqO">
-                                                        <rect key="frame" x="120.33333333333331" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-JC-YKR">
+                                                        <rect key="frame" x="227.33333333333331" y="0.0" width="32.333333333333314" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WcQ-U3-Gng">
-                                                <rect key="frame" x="272.66666666666669" y="0.0" width="106.33333333333331" height="18"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfi-Nx-h2e">
+                                                <rect key="frame" x="0.0" y="120" width="207" height="36"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 유아수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFY-wa-Vre">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 유아수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-aa-dx7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJx-1S-pHd">
-                                                        <rect key="frame" x="90.333333333333314" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="h1i-wc-43v"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EdT-qe-qEk">
-                                        <rect key="frame" x="0.0" y="35" width="380" height="30"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQR-zb-uRh">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 4세 학급수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obf-a2-DiG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6f-LM-JHo">
-                                                        <rect key="frame" x="90.666666666666671" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7V-EV-UXa">
-                                                <rect key="frame" x="121.66666666666667" y="0.0" width="136.66666666666663" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 4세 모집 정원수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ce-aT-BkU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120.66666666666667" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8w-DE-Ug7">
-                                                        <rect key="frame" x="120.66666666666669" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSI-Zv-6dQ">
-                                                <rect key="frame" x="273.33333333333331" y="0.0" width="106.66666666666669" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 4세 유아수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34M-yZ-6YV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pd1-Qt-ey8">
-                                                        <rect key="frame" x="90.666666666666686" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="g78-Tl-cx7">
-                                        <rect key="frame" x="0.0" y="70" width="379" height="30"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV4-NF-Eqe">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 5세 학급수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVA-Vb-ZSu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCc-tB-ald">
-                                                        <rect key="frame" x="90.333333333333329" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jk3-9T-UdX">
-                                                <rect key="frame" x="121.33333333333333" y="0.0" width="136.33333333333337" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 5세 모집 정원수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1w-7V-T2F">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB0-Yq-e5b">
-                                                        <rect key="frame" x="120.33333333333331" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yd0-w6-OUl">
-                                                <rect key="frame" x="272.66666666666669" y="0.0" width="106.33333333333331" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 5세 유아수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjc-v5-BgM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0E-lu-lMI">
-                                                        <rect key="frame" x="90.333333333333314" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="owY-lL-DW9">
-                                        <rect key="frame" x="0.0" y="105" width="365.66666666666669" height="30"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcD-RH-zIu">
-                                                <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="혼합 학급수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed1-9o-nUB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNW-Fw-MMq">
-                                                        <rect key="frame" x="77.333333333333329" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcp-TO-sED">
-                                                <rect key="frame" x="121.33333333333331" y="0.0" width="123" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="혼합 모집 정원수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrr-s6-btr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ho8-RG-xFJ">
-                                                        <rect key="frame" x="107.00000000000001" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7x5-al-MeN">
-                                                <rect key="frame" x="272.33333333333331" y="0.0" width="93.333333333333314" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="혼합 유아수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUg-5C-hdi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXn-JO-Fa4">
-                                                        <rect key="frame" x="77.333333333333371" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="J2c-9A-wON">
-                                        <rect key="frame" x="0.0" y="140" width="381.66666666666669" height="30"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdX-Fp-1hZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특수 학급수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbE-6m-5C6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGZ-jw-2qA">
-                                                        <rect key="frame" x="77.333333333333329" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYb-iU-WV7">
-                                                <rect key="frame" x="116.33333333333331" y="0.0" width="149" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특수학급 모집 정원수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-ec-po2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="133" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-pM-peW">
-                                                        <rect key="frame" x="133" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1d-Em-GoJ">
-                                                <rect key="frame" x="288.33333333333331" y="0.0" width="93.333333333333314" height="18"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특수 유아수 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rs-xM-Qy2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwR-9f-8We">
-                                                        <rect key="frame" x="77.333333333333371" y="0.0" width="16" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-Wb-Fuq">
+                                                        <rect key="frame" x="174.66666666666666" y="0.0" width="32.333333333333343" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -404,44 +188,46 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gy7-zo-U5m" secondAttribute="bottom" constant="10" id="OOm-u0-vXl"/>
+                                    <constraint firstAttribute="trailing" secondItem="gy7-zo-U5m" secondAttribute="trailing" id="Qts-3l-awb"/>
+                                    <constraint firstItem="gy7-zo-U5m" firstAttribute="leading" secondItem="Lie-qP-SPD" secondAttribute="leading" constant="51" id="aRK-gg-g4f"/>
+                                    <constraint firstItem="gy7-zo-U5m" firstAttribute="top" secondItem="Lie-qP-SPD" secondAttribute="top" constant="10" id="hAz-ox-Yvj"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wdX-gh-8Ck" secondAttribute="trailing" constant="5" id="69z-f4-nMm"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wdX-gh-8Ck" secondAttribute="bottom" constant="10" id="A29-bA-GtD"/>
+                            <constraint firstItem="Lie-qP-SPD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9ys-St-ZJ4"/>
+                            <constraint firstItem="Lie-qP-SPD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="500" id="ERr-xS-lGp"/>
                             <constraint firstItem="bXQ-I4-Rw2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Ftg-Gp-4o2"/>
+                            <constraint firstItem="3Xt-Zk-6ku" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="Hu3-1R-h3g"/>
                             <constraint firstItem="fiH-Wk-JvH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="PLc-wg-Jon"/>
-                            <constraint firstItem="wdX-gh-8Ck" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="gEh-0S-vfR"/>
-                            <constraint firstItem="wdX-gh-8Ck" firstAttribute="top" secondItem="bXQ-I4-Rw2" secondAttribute="bottom" constant="86" id="tZq-bq-qLv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3Xt-Zk-6ku" secondAttribute="trailing" constant="10" id="UFf-TB-lqO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Lie-qP-SPD" secondAttribute="trailing" id="j2J-SC-Yfd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3Xt-Zk-6ku" secondAttribute="bottom" constant="10" id="lX2-98-DQJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Lie-qP-SPD" secondAttribute="bottom" constant="40" id="obr-eX-SHX"/>
                             <constraint firstItem="bXQ-I4-Rw2" firstAttribute="leading" secondItem="fiH-Wk-JvH" secondAttribute="trailing" constant="15" id="vH4-fX-AGG"/>
                             <constraint firstItem="fiH-Wk-JvH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="wdZ-pv-GFO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="class3" destination="Z5U-Bh-M3d" id="30m-K1-IRL"/>
-                        <outlet property="class4" destination="H6f-LM-JHo" id="n5K-YA-gaZ"/>
-                        <outlet property="class5" destination="lCc-tB-ald" id="Coy-TW-hlr"/>
-                        <outlet property="classMix" destination="fNW-Fw-MMq" id="Sx2-av-NR7"/>
-                        <outlet property="classSpecial" destination="qGZ-jw-2qA" id="5vV-Ni-oCU"/>
+                        <outlet property="classCount" destination="fhs-cr-V5o" id="ZGU-hH-dfm"/>
+                        <outlet property="classLabel" destination="wa2-5K-JTZ" id="3Ua-ri-ovr"/>
                         <outlet property="kindergartenAddress" destination="d9s-uN-wP5" id="xlt-OH-xUC"/>
                         <outlet property="kindergartenBossName" destination="9yI-38-6c6" id="ugh-TO-f3C"/>
                         <outlet property="kindergartenCallNumber" destination="gyR-rY-UdY" id="T4I-5C-F5Y"/>
                         <outlet property="kindergartenHomepage" destination="9q9-I7-ReY" id="JNM-0Y-qfa"/>
                         <outlet property="kindergartenName" destination="6zU-zf-b3Q" id="0v9-fX-KxK"/>
                         <outlet property="kindergartenTime" destination="haw-Gt-e0j" id="PgS-ih-QAA"/>
-                        <outlet property="peopleCount3" destination="kJx-1S-pHd" id="z71-q8-jgb"/>
-                        <outlet property="peopleCount4" destination="pd1-Qt-ey8" id="xGX-hE-JN9"/>
-                        <outlet property="peopleCount5" destination="N0E-lu-lMI" id="4Z8-K9-KIs"/>
-                        <outlet property="peopleCountMix" destination="CXn-JO-Fa4" id="gjh-xD-VeU"/>
-                        <outlet property="peopleCountSpecial" destination="zwR-9f-8We" id="Ynf-w3-doL"/>
+                        <outlet property="pageControl" destination="3Xt-Zk-6ku" id="f7P-qU-J4b"/>
+                        <outlet property="peopleCount" destination="gyE-Wb-Fuq" id="ITd-Wy-MmN"/>
+                        <outlet property="peopleLabel" destination="GfO-aa-dx7" id="dUn-Nf-WVI"/>
                         <outlet property="publicPrivate" destination="FM3-RI-gnx" id="TER-Tc-D1t"/>
-                        <outlet property="recruitmentClass3" destination="ai7-gB-KqO" id="xjG-y0-e7c"/>
-                        <outlet property="recruitmentClass4" destination="Q8w-DE-Ug7" id="0eV-v3-lSU"/>
-                        <outlet property="recruitmentClass5" destination="qB0-Yq-e5b" id="R8W-xC-P1s"/>
-                        <outlet property="recruitmentClassMix" destination="ho8-RG-xFJ" id="WlA-c9-UpW"/>
-                        <outlet property="recruitmentClassSpecial" destination="doZ-pM-peW" id="qCd-Me-FlF"/>
+                        <outlet property="recruitmentCount" destination="ec3-JC-YKR" id="wtd-i9-bSy"/>
+                        <outlet property="recruitmentLabel" destination="xTe-HC-a1I" id="Wp8-s7-Tib"/>
+                        <outlet property="scrollView" destination="Lie-qP-SPD" id="ivk-bx-xyK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

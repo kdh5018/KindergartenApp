@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		765C14DE2AB8097F0001A245 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C14DD2AB8097F0001A245 /* ErrorResponse.swift */; };
-		767E6F172AC1538200F7A9C3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 767E6F162AC1538200F7A9C3 /* Alamofire */; };
 		768A71112AA6EAA300C3C032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71102AA6EAA300C3C032 /* AppDelegate.swift */; };
 		768A71132AA6EAA300C3C032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71122AA6EAA300C3C032 /* SceneDelegate.swift */; };
 		768A71152AA6EAA300C3C032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A71142AA6EAA300C3C032 /* ViewController.swift */; };
@@ -59,7 +58,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				768A71302AA6ED3100C3C032 /* RxSwift in Frameworks */,
-				767E6F172AC1538200F7A9C3 /* Alamofire in Frameworks */,
 				768A712E2AA6ED3100C3C032 /* RxRelay in Frameworks */,
 				768A712C2AA6ED3100C3C032 /* RxCocoa in Frameworks */,
 			);
@@ -162,7 +160,6 @@
 				768A712B2AA6ED3100C3C032 /* RxCocoa */,
 				768A712D2AA6ED3100C3C032 /* RxRelay */,
 				768A712F2AA6ED3100C3C032 /* RxSwift */,
-				767E6F162AC1538200F7A9C3 /* Alamofire */,
 			);
 			productName = KindergartenApp;
 			productReference = 768A710D2AA6EAA300C3C032 /* KindergartenApp.app */;
@@ -185,16 +182,15 @@
 			};
 			buildConfigurationList = 768A71082AA6EAA300C3C032 /* Build configuration list for PBXProject "KindergartenApp" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				ko,
 				Base,
 			);
 			mainGroup = 768A71042AA6EAA300C3C032;
 			packageReferences = (
 				768A712A2AA6ED3000C3C032 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				767E6F152AC1538200F7A9C3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 768A710E2AA6EAA300C3C032 /* Products */;
 			projectDirPath = "";
@@ -313,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -368,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -389,11 +385,13 @@
 				DEVELOPMENT_TEAM = 887S3AQ8HM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KindergartenApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "전국유치원정보조회";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,11 +419,13 @@
 				DEVELOPMENT_TEAM = 887S3AQ8HM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KindergartenApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "전국유치원정보조회";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,14 +466,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		767E6F152AC1538200F7A9C3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		768A712A2AA6ED3000C3C032 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -485,11 +477,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		767E6F162AC1538200F7A9C3 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 767E6F152AC1538200F7A9C3 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		768A712B2AA6ED3100C3C032 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 768A712A2AA6ED3000C3C032 /* XCRemoteSwiftPackageReference "RxSwift" */;

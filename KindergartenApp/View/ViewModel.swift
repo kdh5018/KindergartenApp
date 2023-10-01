@@ -14,11 +14,13 @@ class ViewModel {
     
     var kinderInfo : BehaviorRelay<[KinderInfo]> = BehaviorRelay<[KinderInfo]>(value: [])
     
+    // 오류 확인용
     var notifyErrorOccured: PublishSubject<String> = PublishSubject<String>()
     
     // 초기 화면 지역선택 유도 뷰
     var induceKindergarten = BehaviorRelay(value: true)
     
+    // 화면 로딩 on/off를 위한 behaviorRelay
     var isLoading = BehaviorRelay(value: false)
     
     // 지역 재선택시 테이블뷰셀 스크롤 위로 올리기
