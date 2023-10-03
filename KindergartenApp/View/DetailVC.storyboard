@@ -121,118 +121,87 @@
                                     <constraint firstAttribute="width" constant="200" id="X9C-xY-GIC"/>
                                 </constraints>
                             </stackView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-Zk-6ku">
-                                <rect key="frame" x="10" y="782" width="373" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="Cgk-Jw-AJk"/>
-                                    <constraint firstAttribute="width" constant="373" id="Pnr-mN-qoL"/>
-                                </constraints>
-                            </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lie-qP-SPD">
-                                <rect key="frame" x="0.0" y="559" width="393" height="219"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="gy7-zo-U5m">
-                                        <rect key="frame" x="51" y="10" width="259.66666666666669" height="156"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9M-JH-Mau">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 학급수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa2-5K-JTZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhs-cr-V5o">
-                                                        <rect key="frame" x="174.66666666666666" y="0.0" width="32.333333333333343" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8sm-49-EJ7">
-                                                <rect key="frame" x="0.0" y="60" width="259.66666666666669" height="36"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 모집정원수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTe-HC-a1I">
-                                                        <rect key="frame" x="0.0" y="0.0" width="226.33333333333334" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-JC-YKR">
-                                                        <rect key="frame" x="227.33333333333331" y="0.0" width="32.333333333333314" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfi-Nx-h2e">
-                                                <rect key="frame" x="0.0" y="120" width="207" height="36"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 유아수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-aa-dx7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-Wb-Fuq">
-                                                        <rect key="frame" x="174.66666666666666" y="0.0" width="32.333333333333343" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="gy7-zo-U5m" secondAttribute="bottom" constant="10" id="OOm-u0-vXl"/>
-                                    <constraint firstAttribute="trailing" secondItem="gy7-zo-U5m" secondAttribute="trailing" id="Qts-3l-awb"/>
-                                    <constraint firstItem="gy7-zo-U5m" firstAttribute="leading" secondItem="Lie-qP-SPD" secondAttribute="leading" constant="51" id="aRK-gg-g4f"/>
-                                    <constraint firstItem="gy7-zo-U5m" firstAttribute="top" secondItem="Lie-qP-SPD" secondAttribute="top" constant="10" id="hAz-ox-Yvj"/>
-                                </constraints>
-                            </scrollView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecb-Uf-akN">
+                                <rect key="frame" x="40" y="567" width="343" height="195"/>
+                                <connections>
+                                    <segue destination="esh-NP-b0M" kind="embed" id="qWl-db-BTy"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Lie-qP-SPD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9ys-St-ZJ4"/>
-                            <constraint firstItem="Lie-qP-SPD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="500" id="ERr-xS-lGp"/>
+                            <constraint firstItem="ecb-Uf-akN" firstAttribute="top" secondItem="bXQ-I4-Rw2" secondAttribute="bottom" constant="200" id="9cT-8l-2b2"/>
                             <constraint firstItem="bXQ-I4-Rw2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Ftg-Gp-4o2"/>
-                            <constraint firstItem="3Xt-Zk-6ku" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="Hu3-1R-h3g"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ecb-Uf-akN" secondAttribute="trailing" constant="10" id="GKR-A9-8Sw"/>
                             <constraint firstItem="fiH-Wk-JvH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="PLc-wg-Jon"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3Xt-Zk-6ku" secondAttribute="trailing" constant="10" id="UFf-TB-lqO"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Lie-qP-SPD" secondAttribute="trailing" id="j2J-SC-Yfd"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3Xt-Zk-6ku" secondAttribute="bottom" constant="10" id="lX2-98-DQJ"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Lie-qP-SPD" secondAttribute="bottom" constant="40" id="obr-eX-SHX"/>
+                            <constraint firstItem="ecb-Uf-akN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="UjF-aj-Q5h"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ecb-Uf-akN" secondAttribute="bottom" constant="56" id="mdO-aY-cG9"/>
                             <constraint firstItem="bXQ-I4-Rw2" firstAttribute="leading" secondItem="fiH-Wk-JvH" secondAttribute="trailing" constant="15" id="vH4-fX-AGG"/>
                             <constraint firstItem="fiH-Wk-JvH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="wdZ-pv-GFO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="classCount" destination="fhs-cr-V5o" id="ZGU-hH-dfm"/>
-                        <outlet property="classLabel" destination="wa2-5K-JTZ" id="3Ua-ri-ovr"/>
                         <outlet property="kindergartenAddress" destination="d9s-uN-wP5" id="xlt-OH-xUC"/>
                         <outlet property="kindergartenBossName" destination="9yI-38-6c6" id="ugh-TO-f3C"/>
                         <outlet property="kindergartenCallNumber" destination="gyR-rY-UdY" id="T4I-5C-F5Y"/>
                         <outlet property="kindergartenHomepage" destination="9q9-I7-ReY" id="JNM-0Y-qfa"/>
                         <outlet property="kindergartenName" destination="6zU-zf-b3Q" id="0v9-fX-KxK"/>
                         <outlet property="kindergartenTime" destination="haw-Gt-e0j" id="PgS-ih-QAA"/>
-                        <outlet property="pageControl" destination="3Xt-Zk-6ku" id="f7P-qU-J4b"/>
-                        <outlet property="peopleCount" destination="gyE-Wb-Fuq" id="ITd-Wy-MmN"/>
-                        <outlet property="peopleLabel" destination="GfO-aa-dx7" id="dUn-Nf-WVI"/>
                         <outlet property="publicPrivate" destination="FM3-RI-gnx" id="TER-Tc-D1t"/>
-                        <outlet property="recruitmentCount" destination="ec3-JC-YKR" id="wtd-i9-bSy"/>
-                        <outlet property="recruitmentLabel" destination="xTe-HC-a1I" id="Wp8-s7-Tib"/>
-                        <outlet property="scrollView" destination="Lie-qP-SPD" id="ivk-bx-xyK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Old4VC-->
+        <scene sceneID="ml3-BS-kpC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Old4VC" storyboardName="Old4VC" referencedIdentifier="Old4VC" id="muA-wV-dLd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c33-5L-A1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="503"/>
+        </scene>
+        <!--PageVC-->
+        <scene sceneID="9Xw-Nf-BMq">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="esh-NP-b0M" customClass="PageVC" customModule="KindergartenApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Zt-Eo-Xpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="-10"/>
+        </scene>
+        <!--Old3VC-->
+        <scene sceneID="vev-gC-oz8">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Old3VC" storyboardName="Old3VC" referencedIdentifier="Old3VC" id="RRh-Tn-NT0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWg-rB-G36" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="503"/>
+        </scene>
+        <!--OldMixVC-->
+        <scene sceneID="3wh-bI-3fR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OldMixVC" storyboardName="OldMixVC" referencedIdentifier="OldMixVC" id="kCF-hb-3hC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gp-NR-E7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="585" y="503"/>
+        </scene>
+        <!--Old5VC-->
+        <scene sceneID="Oa4-d0-xJW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Old5VC" storyboardName="Old5VC" referencedIdentifier="Old5VC" id="82M-Nt-fPg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cri-di-d1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="503"/>
+        </scene>
+        <!--OldSpecialVC-->
+        <scene sceneID="tOG-SG-RYg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OldSpecialVC" storyboardName="OldSpecialVC" referencedIdentifier="OldSpecialVC" id="9iD-ZW-JWY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yG-a3-ebu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="503"/>
         </scene>
     </scenes>
     <resources>

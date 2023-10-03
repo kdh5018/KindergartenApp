@@ -147,6 +147,8 @@ class ViewController: UIViewController {
         sidoButton.showsMenuAsPrimaryAction = true
         sidoButton.changesSelectionAsPrimaryAction = true
         
+//        sidoButton.isUserInteractionEnabled = false
+        
     }
     
     
@@ -886,12 +888,53 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
+        
         if segue.identifier == "DetailVC",
            let destinationVC = segue.destination as? DetailVC,
            let selectedKindergarten = sender as? KinderInfo {
 
             destinationVC.selectedKindergarten = selectedKindergarten
             
+        }
+        
+        if segue.identifier == "Old3VC",
+           let destinationVC = segue.destination as? Old3VC,
+           let selectedKindergarten = sender as? KinderInfo {
+
+            destinationVC.selectedKindergarten = selectedKindergarten
+            print(#fileID, #function, #line, "- 올드3으로 넘어가는 프리페어 메소드: \(destinationVC.selectedKindergarten)")
+            
+        }
+
+        if segue.identifier == "Old4VC",
+           let destinationVC = segue.destination as? Old4VC,
+           let selectedKindergarten = sender as? KinderInfo {
+
+            destinationVC.selectedKindergarten = selectedKindergarten
+            
+        }
+        
+        if segue.identifier == "Old5VC",
+           let destinationVC = segue.destination as? Old5VC,
+           let selectedKindergarten = sender as? KinderInfo {
+
+            destinationVC.selectedKindergarten = selectedKindergarten
+            
+        }
+        
+        if segue.identifier == "OldMixVC",
+           let destinationVC = segue.destination as? OldMixVC,
+           let selectedKindergarten = sender as? KinderInfo {
+
+            destinationVC.selectedKindergarten = selectedKindergarten
+            
+        }
+
+        if segue.identifier == "OldSpecialVC",
+           let destinationVC = segue.destination as? OldSpecialVC,
+           let selectedKindergarten = sender as? KinderInfo {
+
+            destinationVC.selectedKindergarten = selectedKindergarten
             
         }
     }
@@ -972,9 +1015,65 @@ extension ViewController: UITableViewDataSource {
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
         
+        cell.old3 = { [weak self] in
+            print(#fileID, #function, #line, "- 뷰컨 버튼 할당")
+            
+            guard let self = self else { return }
+            
+            let storyboard = UIStoryboard(name: "Old3VC", bundle: nil)
+            let Old3VC = storyboard.instantiateViewController(withIdentifier: "Old3VC") as! Old3VC
+            
+            Old3VC.selectedKindergarten = self.kinderInfo[indexPath.row]
+            print(#fileID, #function, #line, "- 올드3으로 넘어가는 데이터: \(Old3VC.selectedKindergarten)")
+        }
+        
+        cell.old4 = { [weak self] in
+            print(#fileID, #function, #line, "- 뷰컨 버튼 할당")
+            
+            guard let self = self else { return }
+            
+            let storyboard = UIStoryboard(name: "Old4VC", bundle: nil)
+            let Old4VC = storyboard.instantiateViewController(withIdentifier: "Old4VC") as! Old4VC
+            
+            Old4VC.selectedKindergarten = self.kinderInfo[indexPath.row]
+        }
+        
+        cell.old5 = { [weak self] in
+            print(#fileID, #function, #line, "- 뷰컨 버튼 할당")
+            
+            guard let self = self else { return }
+            
+            let storyboard = UIStoryboard(name: "Old5VC", bundle: nil)
+            let Old5VC = storyboard.instantiateViewController(withIdentifier: "Old5VC") as! Old5VC
+            
+            Old5VC.selectedKindergarten = self.kinderInfo[indexPath.row]
+        }
+        
+        cell.oldMix = { [weak self] in
+            print(#fileID, #function, #line, "- 뷰컨 버튼 할당")
+            
+            guard let self = self else { return }
+            
+            let storyboard = UIStoryboard(name: "OldMixVC", bundle: nil)
+            let OldMixVC = storyboard.instantiateViewController(withIdentifier: "OldMixVC") as! OldMixVC
+            
+            OldMixVC.selectedKindergarten = self.kinderInfo[indexPath.row]
+        }
+        
+        cell.oldSpecial = { [weak self] in
+            print(#fileID, #function, #line, "- 뷰컨 버튼 할당")
+            
+            guard let self = self else { return }
+            
+            let storyboard = UIStoryboard(name: "OldSpecialVC", bundle: nil)
+            let OldSpecialVC = storyboard.instantiateViewController(withIdentifier: "OldSpecialVC") as! OldSpecialVC
+            
+            OldSpecialVC.selectedKindergarten = self.kinderInfo[indexPath.row]
+        }
+
+        
         
         let cellData = self.kinderInfo[indexPath.row]
-        print(#fileID, #function, #line, "- cellData indexPath.row = \(cellData)")
         
         // 뷰컨트롤러 테이블뷰셀
         cell.updateUI(cellData)

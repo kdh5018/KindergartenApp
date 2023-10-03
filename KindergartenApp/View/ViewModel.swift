@@ -36,7 +36,7 @@ class ViewModel {
         
         Observable.just(())
             .delay(RxTimeInterval.milliseconds(1000), scheduler: MainScheduler.instance)
-            .flatMapLatest{
+            .flatMapLatest{ // 최신 데이터 요청, 이전 데이터 무시
                 KindergartenAPI.fetchKindergarten(sidoCode: sidoCode, sggCode: ssgCode)
             }
             .do(onError: { error in

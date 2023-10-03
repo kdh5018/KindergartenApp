@@ -22,12 +22,21 @@ class KindergartenCell: UITableViewCell {
     }
     
     var buttonClicked: (() -> Void)? = nil
+    var old3: (() -> Void)? = nil
+    var old4: (() -> Void)? = nil
+    var old5: (() -> Void)? = nil
+    var oldMix: (() -> Void)? = nil
+    var oldSpecial: (() -> Void)? = nil
     
     // DetailVC로 가는 버튼
     @IBAction func viewMoreBtnClicked(_ sender: UIButton) {
         print(#fileID, #function, #line, "- button clicked")
         buttonClicked?()
-        
+        old3?()
+        old4?()
+        old5?()
+        oldMix?()
+        oldSpecial?()
     }
     
     func updateUI(_ cellData: KinderInfo) {

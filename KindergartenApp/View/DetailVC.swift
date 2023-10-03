@@ -18,28 +18,17 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var kindergartenHomepage: UITextView!
     @IBOutlet weak var kindergartenTime: UILabel!
     @IBOutlet weak var kindergartenBossName: UILabel!
-    
-    @IBOutlet weak var scrollView: UIScrollView!
-    
-    @IBOutlet weak var classLabel: UILabel!
-    @IBOutlet weak var recruitmentLabel: UILabel!
-    @IBOutlet weak var peopleLabel: UILabel!
-    
-    @IBOutlet weak var classCount: UILabel!
-    @IBOutlet weak var recruitmentCount: UILabel!
-    @IBOutlet weak var peopleCount: UILabel!
         
     @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(#fileID, #function, #line, "- 디테일selectedKindergarten: \(selectedKindergarten)")
+        
         setupUI()
         
-        scrollView.delegate = self
-        scrollView.isPagingEnabled = true
-        
-        pageControl.addTarget(self, action: #selector(pageChanged), for: .valueChanged)
+//        pageControl.addTarget(self, action: #selector(pageChanged), for: .valueChanged)
         
         // 링크 누르면 해당 링크로 이동
         if let homepageURL = selectedKindergarten?.hpaddr {
@@ -78,71 +67,69 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
         kindergartenTime.text = selectedKindergarten?.opertime
         kindergartenBossName.text = selectedKindergarten?.ldgrname
         
-        classCount.text = selectedKindergarten?.clcnt3
-        recruitmentCount.text = selectedKindergarten?.ag3fpcnt
-        peopleCount.text = selectedKindergarten?.ppcnt3
-        
-        pageControl.currentPageIndicatorTintColor = UIColor.black
-        pageControl.pageIndicatorTintColor = UIColor.lightGray
+
+//
+//        pageControl.currentPageIndicatorTintColor = UIColor.black
+//        pageControl.pageIndicatorTintColor = UIColor.lightGray
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-       let pageIndex = Int(scrollView.contentOffset.x / view.frame.width)
-       pageControl.currentPage = pageIndex
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//       let pageIndex = Int(scrollView.contentOffset.x / view.frame.width)
+//       pageControl.currentPage = pageIndex
+//    }
 
     
     @objc func pageChanged(_ sender: UIPageControl) {
-        let count = pageControl.currentPage
-        switch count {
-        case 0:
-            classLabel.text = "만 3세 학급수: "
-            recruitmentLabel.text = "만 3세 모집정원수: "
-            peopleLabel.text = "만 3세 유아수: "
-            
-            classCount.text = selectedKindergarten?.clcnt3
-            recruitmentCount.text = selectedKindergarten?.ag3fpcnt
-            peopleCount.text = selectedKindergarten?.ppcnt3
-            
-        case 1:
-            classLabel.text = "만 4세 학급수: "
-            recruitmentLabel.text = "만 4세 모집정원수: "
-            peopleLabel.text = "만 4세 유아수: "
-            
-            classCount.text = selectedKindergarten?.clcnt4
-            recruitmentCount.text = selectedKindergarten?.ag4fpcnt
-            peopleCount.text = selectedKindergarten?.ppcnt4
-            
-        case 2:
-            classLabel.text = "만 5세 학급수: "
-            recruitmentLabel.text = "만 5세 모집정원수: "
-            peopleLabel.text = "만 5세 유아수: "
-            
-            classCount.text = selectedKindergarten?.clcnt5
-            recruitmentCount.text = selectedKindergarten?.ag5fpcnt
-            peopleCount.text = selectedKindergarten?.ppcnt5
-            
-        case 3:
-            classLabel.text = "혼합 학급수: "
-            recruitmentLabel.text = "혼합 모집 모집정원수: "
-            peopleLabel.text = "혼합 유아수: "
-            
-            classCount.text = selectedKindergarten?.mixclcnt
-            recruitmentCount.text = selectedKindergarten?.mixfpcnt
-            peopleCount.text = selectedKindergarten?.mixppcnt
-            
-        case 4:
-            classLabel.text = "특수 학급수: "
-            recruitmentLabel.text = "특수 학급 모집정원수: "
-            peopleLabel.text = "특수 유아수: "
-            
-            classCount.text = selectedKindergarten?.shclcnt
-            recruitmentCount.text = selectedKindergarten?.spcnfpcnt
-            peopleCount.text = selectedKindergarten?.shppcnt
-            
-        default:
-            print(#fileID, #function, #line, "- comment")
-        }
+//        let count = pageControl.currentPage
+//        switch count {
+//        case 0:
+//            classLabel.text = "만 3세 학급수: "
+//            recruitmentLabel.text = "만 3세 모집정원수: "
+//            peopleLabel.text = "만 3세 유아수: "
+//            
+//            classCount.text = selectedKindergarten?.clcnt3
+//            recruitmentCount.text = selectedKindergarten?.ag3fpcnt
+//            peopleCount.text = selectedKindergarten?.ppcnt3
+//            
+//        case 1:
+//            classLabel.text = "만 4세 학급수: "
+//            recruitmentLabel.text = "만 4세 모집정원수: "
+//            peopleLabel.text = "만 4세 유아수: "
+//            
+//            classCount.text = selectedKindergarten?.clcnt4
+//            recruitmentCount.text = selectedKindergarten?.ag4fpcnt
+//            peopleCount.text = selectedKindergarten?.ppcnt4
+//            
+//        case 2:
+//            classLabel.text = "만 5세 학급수: "
+//            recruitmentLabel.text = "만 5세 모집정원수: "
+//            peopleLabel.text = "만 5세 유아수: "
+//            
+//            classCount.text = selectedKindergarten?.clcnt5
+//            recruitmentCount.text = selectedKindergarten?.ag5fpcnt
+//            peopleCount.text = selectedKindergarten?.ppcnt5
+//            
+//        case 3:
+//            classLabel.text = "혼합 학급수: "
+//            recruitmentLabel.text = "혼합 모집 모집정원수: "
+//            peopleLabel.text = "혼합 유아수: "
+//            
+//            classCount.text = selectedKindergarten?.mixclcnt
+//            recruitmentCount.text = selectedKindergarten?.mixfpcnt
+//            peopleCount.text = selectedKindergarten?.mixppcnt
+//            
+//        case 4:
+//            classLabel.text = "특수 학급수: "
+//            recruitmentLabel.text = "특수 학급 모집정원수: "
+//            peopleLabel.text = "특수 유아수: "
+//            
+//            classCount.text = selectedKindergarten?.shclcnt
+//            recruitmentCount.text = selectedKindergarten?.spcnfpcnt
+//            peopleCount.text = selectedKindergarten?.shppcnt
+//            
+//        default:
+//            print(#fileID, #function, #line, "- comment")
+//        }
     }
     
     @objc func callPhoneNumber(_ sender: UITapGestureRecognizer) {
