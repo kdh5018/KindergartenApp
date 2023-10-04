@@ -19,6 +19,8 @@ class OldSpecialVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.selectedKindergarten = DataController.shared.selectedKindergarten
 
         classSpecialCount.text = selectedKindergarten?.shclcnt
         recruitmentSpecialCount.text = selectedKindergarten?.spcnfpcnt

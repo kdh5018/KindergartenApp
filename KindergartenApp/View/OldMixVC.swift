@@ -20,6 +20,8 @@ class OldMixVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.selectedKindergarten = DataController.shared.selectedKindergarten
+        
         classMixCount.text = selectedKindergarten?.mixclcnt
         recruitmentMixCount.text = selectedKindergarten?.mixfpcnt
         peopleMixCount.text = selectedKindergarten?.mixppcnt

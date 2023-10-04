@@ -20,13 +20,14 @@ class Old3VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(#fileID, #function, #line, "- 3세selectedKindergarten: \(selectedKindergarten)")
+        self.selectedKindergarten = DataController.shared.selectedKindergarten
         
         class3Count.text = selectedKindergarten?.clcnt3
         recruitment3Count.text = selectedKindergarten?.ag3fpcnt
         people3Count.text = selectedKindergarten?.ppcnt3
         
     }
+
     
 
 }

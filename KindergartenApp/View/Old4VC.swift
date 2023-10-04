@@ -18,8 +18,9 @@ class Old4VC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#fileID, #function, #line, "- 4세selectedKindergarten: \(selectedKindergarten)")
 
+        self.selectedKindergarten = DataController.shared.selectedKindergarten
+        
         class4Count.text = selectedKindergarten?.clcnt4
         recruitment4Count.text = selectedKindergarten?.ag4fpcnt
         people4Count.text = selectedKindergarten?.ppcnt4

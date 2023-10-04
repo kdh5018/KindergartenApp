@@ -9,6 +9,9 @@ import UIKit
 
 class PageVC: UIPageViewController {
     
+    
+    var selectedKindergarten: KinderInfo?
+    
     lazy var vcArray: [UIViewController] = {
         return [self.vcInstance(name: "Old3VC"),
                 self.vcInstance(name: "Old4VC"),
@@ -16,6 +19,11 @@ class PageVC: UIPageViewController {
                 self.vcInstance(name: "OldMixVC"),
                 self.vcInstance(name: "OldSpecialVC")]
     }()
+    
+    var currentIndex: Int? = nil
+    fileprivate var tempCurrentIndex: Int? = nil
+    
+    var currentPageChanged: ((Int) -> Void)? = nil
     
     private func vcInstance(name: String) -> UIViewController {
         return UIStoryboard(name: "DetailVC", bundle: nil).instantiateViewController(withIdentifier: name)
@@ -25,19 +33,24 @@ class PageVC: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.dataSource = self
-        self.delegate = self
+        dataSource = self
+        delegate = self
         
         if let firstVC = vcArray.first {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
         }
+        if let selectedKindergarten = DataController.shared.selectedKindergarten {
+            self.selectedKindergarten = selectedKindergarten
+        }
+        
+        
         
     }
     
 
 }
 
-extension PageVC: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+extension PageVC: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         // 배열에서 현재 페이지의 컨트롤러를 찾아서 해당 인덱스를 현재 인덱스로 기록
         guard let vcIndex = vcArray.firstIndex(of: viewController) else { return nil }
@@ -78,4 +91,27 @@ extension PageVC: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     }
     
     
+}
+
+extension PageVC: UIPageViewControllerDelegate {
+    
+    // 제스처 시작
+    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        
+        guard let firstVC = pendingViewControllers.first else { return }
+        
+        tempCurrentIndex = vcArray.firstIndex(of: firstVC)
+    }
+    
+    // 제스처 끝남
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if !completed { return }
+        
+        currentIndex = tempCurrentIndex
+        if let currentIndex = currentIndex {
+            // 밖으로 올려줌
+            currentPageChanged?(currentIndex)
+        }
+        
+    }
 }

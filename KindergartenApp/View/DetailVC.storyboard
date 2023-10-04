@@ -9,151 +9,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--DetailVC-->
-        <scene sceneID="s0d-6b-0kx">
+        <!--PageVC-->
+        <scene sceneID="qLv-eP-heK">
             <objects>
-                <viewController storyboardIdentifier="DetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DetailVC" customModule="KindergartenApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fiH-Wk-JvH">
-                                <rect key="frame" x="10" y="109" width="84" height="258"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원명 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlF-KW-SwC">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설립 유형 :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2Z-1Y-sAW">
-                                        <rect key="frame" x="0.0" y="39" width="84" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41L-7b-ziW">
-                                        <rect key="frame" x="0.0" y="78" width="84" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wP-al-xgw">
-                                        <rect key="frame" x="0.0" y="117" width="84" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홈페이지 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8w-pp-ltq">
-                                        <rect key="frame" x="0.0" y="156" width="84" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="운영시간 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uow-xU-epe">
-                                        <rect key="frame" x="0.0" y="195" width="84" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원장명 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U05-1M-TP6">
-                                        <rect key="frame" x="0.0" y="234" width="84" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-I4-Rw2">
-                                <rect key="frame" x="109" y="109" width="200" height="258"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zU-zf-b3Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="v2b-LX-f5V"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공립/사립" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FM3-RI-gnx">
-                                        <rect key="frame" x="0.0" y="39" width="200" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 주소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-uN-wP5">
-                                        <rect key="frame" x="0.0" y="78" width="200" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="010-9164-5018" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gyR-rY-UdY">
-                                        <rect key="frame" x="0.0" y="117" width="200" height="24"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="www.naver.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-I7-ReY">
-                                        <rect key="frame" x="0.0" y="156" width="200" height="24"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 ~ 18:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haw-Gt-e0j">
-                                        <rect key="frame" x="0.0" y="195" width="200" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김도훈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yI-38-6c6">
-                                        <rect key="frame" x="0.0" y="234" width="200" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="X9C-xY-GIC"/>
-                                </constraints>
-                            </stackView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecb-Uf-akN">
-                                <rect key="frame" x="40" y="567" width="343" height="195"/>
-                                <connections>
-                                    <segue destination="esh-NP-b0M" kind="embed" id="qWl-db-BTy"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ecb-Uf-akN" firstAttribute="top" secondItem="bXQ-I4-Rw2" secondAttribute="bottom" constant="200" id="9cT-8l-2b2"/>
-                            <constraint firstItem="bXQ-I4-Rw2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Ftg-Gp-4o2"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ecb-Uf-akN" secondAttribute="trailing" constant="10" id="GKR-A9-8Sw"/>
-                            <constraint firstItem="fiH-Wk-JvH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="PLc-wg-Jon"/>
-                            <constraint firstItem="ecb-Uf-akN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="UjF-aj-Q5h"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ecb-Uf-akN" secondAttribute="bottom" constant="56" id="mdO-aY-cG9"/>
-                            <constraint firstItem="bXQ-I4-Rw2" firstAttribute="leading" secondItem="fiH-Wk-JvH" secondAttribute="trailing" constant="15" id="vH4-fX-AGG"/>
-                            <constraint firstItem="fiH-Wk-JvH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="wdZ-pv-GFO"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="kindergartenAddress" destination="d9s-uN-wP5" id="xlt-OH-xUC"/>
-                        <outlet property="kindergartenBossName" destination="9yI-38-6c6" id="ugh-TO-f3C"/>
-                        <outlet property="kindergartenCallNumber" destination="gyR-rY-UdY" id="T4I-5C-F5Y"/>
-                        <outlet property="kindergartenHomepage" destination="9q9-I7-ReY" id="JNM-0Y-qfa"/>
-                        <outlet property="kindergartenName" destination="6zU-zf-b3Q" id="0v9-fX-KxK"/>
-                        <outlet property="kindergartenTime" destination="haw-Gt-e0j" id="PgS-ih-QAA"/>
-                        <outlet property="publicPrivate" destination="FM3-RI-gnx" id="TER-Tc-D1t"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="PageVC" storyboardName="PageVC" referencedIdentifier="PageVC" id="n4l-F0-Dng" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="um8-Ln-WVW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="926" y="-42"/>
         </scene>
         <!--Old4VC-->
         <scene sceneID="ml3-BS-kpC">
@@ -162,14 +24,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c33-5L-A1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13" y="503"/>
-        </scene>
-        <!--PageVC-->
-        <scene sceneID="9Xw-Nf-BMq">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="esh-NP-b0M" customClass="PageVC" customModule="KindergartenApp" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Zt-Eo-Xpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="890" y="-10"/>
         </scene>
         <!--Old3VC-->
         <scene sceneID="vev-gC-oz8">
@@ -202,6 +56,162 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yG-a3-ebu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="889" y="503"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="k8m-U0-oJL">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vgv-q5-c0M" customClass="DetailVC" customModule="KindergartenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M9T-L6-UdR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="i3f-UD-9YY">
+                                <rect key="frame" x="10" y="109" width="84" height="258"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원명 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGI-gH-i2W">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설립 유형 :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soh-7S-btq">
+                                        <rect key="frame" x="0.0" y="39" width="84" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYd-QU-iaQ">
+                                        <rect key="frame" x="0.0" y="78" width="84" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqn-v9-hyD">
+                                        <rect key="frame" x="0.0" y="117" width="84" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홈페이지 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSM-JY-OB3">
+                                        <rect key="frame" x="0.0" y="156" width="84" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="운영시간 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPW-qK-mQK">
+                                        <rect key="frame" x="0.0" y="195" width="84" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원장명 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3q-jR-Nlb">
+                                        <rect key="frame" x="0.0" y="234" width="84" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xce-dL-ap0">
+                                <rect key="frame" x="109" y="109" width="200" height="258"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfb-bW-XMc">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="tc2-k7-INf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공립/사립" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocg-zP-DoO">
+                                        <rect key="frame" x="0.0" y="39" width="200" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 주소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntw-QU-YeM">
+                                        <rect key="frame" x="0.0" y="78" width="200" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="010-9164-5018" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-Jf-XGL">
+                                        <rect key="frame" x="0.0" y="117" width="200" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="www.naver.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RvD-Vg-oEp">
+                                        <rect key="frame" x="0.0" y="156" width="200" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 ~ 18:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Fh-QDG">
+                                        <rect key="frame" x="0.0" y="195" width="200" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김도훈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5Z-h2-KXz">
+                                        <rect key="frame" x="0.0" y="234" width="200" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="SJZ-F8-nri"/>
+                                </constraints>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0To-hv-gMw">
+                                <rect key="frame" x="40" y="567" width="343" height="195"/>
+                                <connections>
+                                    <segue destination="n4l-F0-Dng" kind="embed" id="nLo-6f-Msy"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hee-ZO-adC">
+                                <rect key="frame" x="10" y="772" width="373" height="26"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EMx-p1-WFW"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0To-hv-gMw" firstAttribute="top" secondItem="xce-dL-ap0" secondAttribute="bottom" constant="200" id="5vL-UP-uDC"/>
+                            <constraint firstItem="i3f-UD-9YY" firstAttribute="leading" secondItem="EMx-p1-WFW" secondAttribute="leading" constant="10" id="7q7-Dl-qJD"/>
+                            <constraint firstItem="xce-dL-ap0" firstAttribute="leading" secondItem="i3f-UD-9YY" secondAttribute="trailing" constant="15" id="7v0-0J-Qd4"/>
+                            <constraint firstItem="EMx-p1-WFW" firstAttribute="trailing" secondItem="0To-hv-gMw" secondAttribute="trailing" constant="10" id="DLq-3a-BNQ"/>
+                            <constraint firstItem="EMx-p1-WFW" firstAttribute="bottom" secondItem="0To-hv-gMw" secondAttribute="bottom" constant="56" id="U3P-O2-p19"/>
+                            <constraint firstItem="xce-dL-ap0" firstAttribute="top" secondItem="EMx-p1-WFW" secondAttribute="top" constant="50" id="V3q-Zk-Mdg"/>
+                            <constraint firstItem="hee-ZO-adC" firstAttribute="leading" secondItem="EMx-p1-WFW" secondAttribute="leading" constant="10" id="f3S-S0-KSa"/>
+                            <constraint firstItem="EMx-p1-WFW" firstAttribute="bottom" secondItem="hee-ZO-adC" secondAttribute="bottom" constant="20" id="i60-ff-lLU"/>
+                            <constraint firstItem="EMx-p1-WFW" firstAttribute="trailing" secondItem="hee-ZO-adC" secondAttribute="trailing" constant="10" id="iyo-VL-JHl"/>
+                            <constraint firstItem="i3f-UD-9YY" firstAttribute="top" secondItem="EMx-p1-WFW" secondAttribute="top" constant="50" id="pib-Bh-FAA"/>
+                            <constraint firstItem="0To-hv-gMw" firstAttribute="leading" secondItem="EMx-p1-WFW" secondAttribute="leading" constant="40" id="x6f-NP-5BE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="0To-hv-gMw" id="KOy-FM-Evb"/>
+                        <outlet property="kindergartenAddress" destination="ntw-QU-YeM" id="LfO-Rd-OOd"/>
+                        <outlet property="kindergartenBossName" destination="e5Z-h2-KXz" id="mJ5-F1-4lm"/>
+                        <outlet property="kindergartenCallNumber" destination="ezp-Jf-XGL" id="ggF-ZU-SSX"/>
+                        <outlet property="kindergartenHomepage" destination="RvD-Vg-oEp" id="ZnR-m9-pms"/>
+                        <outlet property="kindergartenName" destination="Cfb-bW-XMc" id="Kex-xT-ctz"/>
+                        <outlet property="kindergartenTime" destination="VSv-Fh-QDG" id="B15-vK-Iu4"/>
+                        <outlet property="pageControl" destination="hee-ZO-adC" id="qFJ-8a-Oqm"/>
+                        <outlet property="publicPrivate" destination="Ocg-zP-DoO" id="IaY-pa-PFg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="111-u1-zD1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

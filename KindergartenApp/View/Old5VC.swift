@@ -18,6 +18,8 @@ class Old5VC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.selectedKindergarten = DataController.shared.selectedKindergarten
 
         class5Count.text = selectedKindergarten?.clcnt5
         recruitment5Count.text = selectedKindergarten?.ag5fpcnt
