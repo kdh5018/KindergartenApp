@@ -39,7 +39,9 @@ class ViewController: UIViewController {
         let view: UIView = UIView(frame: CGRect(x: 0, y: 0, width: myTableView.bounds.width, height: 300))
         
         let label: UILabel = UILabel()
-        label.text = "원하는 지역을 선택해주세요👶🏻"
+        label.text = "원하는 지역을 선택해주세요👶🏻 \n시/구 → 시/군/구 순서로 선택해주세요🐥"
+        label.numberOfLines = 2
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
         NSLayoutConstraint.activate([
@@ -77,10 +79,10 @@ class ViewController: UIViewController {
         
         self.myTableView.tableFooterView = indicator
         
+        sigunguButton.isUserInteractionEnabled = false
+        
         self.guideLabel.text = "해당 정보는 교육부 - 유치원알리미에서 제공하는 정보입니다. \n보다 자세한 정보는 희망하는 유치원에 문의하시기 바랍니다."
         self.guideLabel.numberOfLines = 2
-        
-        print(#fileID, #function, #line, "- selectedSidoName: \(selectedSidoName)")
         
         // 뷰모델 이벤트 받기 - 뷰 - 뷰모델 바인딩 - 묶기
         self.rxBindViewModel(viewModel: self.viewModel)
@@ -103,14 +105,12 @@ class ViewController: UIViewController {
             UIAction(title: sido, handler: optionClosure)
         }
         
-        print(#fileID, #function, #line, "- 초기 시도: \(selectedSidoName)")
+//        print(#fileID, #function, #line, "- 초기 시도: \(selectedSidoName)")
         
         sidoButton.menu = UIMenu(children: actions)
         
         sidoButton.showsMenuAsPrimaryAction = true
         sidoButton.changesSelectionAsPrimaryAction = true
-        
-//        sidoButton.isUserInteractionEnabled = false
         
     }
     
@@ -118,6 +118,10 @@ class ViewController: UIViewController {
     func sigunguPopupButton(selectedSidoName: String) {
         
         print(#fileID, #function, #line, "- 설정된 시도: \(selectedSidoName)")
+        
+        if selectedSidoName != nil {
+            sigunguButton.isUserInteractionEnabled = true
+        }
         
         let optionClosure = { (action: UIAction) in
             print(action.title)
@@ -210,7 +214,7 @@ class ViewController: UIViewController {
         sigunguButton.showsMenuAsPrimaryAction = true
         sigunguButton.changesSelectionAsPrimaryAction = true
         
-//        sigunguButton.isUserInteractionEnabled = false
+        
         
     }
     

@@ -113,10 +113,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xce-dL-ap0">
-                                <rect key="frame" x="109" y="109" width="200" height="258"/>
+                                <rect key="frame" x="109" y="109" width="274" height="258"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfb-bW-XMc">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="tc2-k7-INf"/>
                                         </constraints>
@@ -125,49 +125,46 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공립/사립" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocg-zP-DoO">
-                                        <rect key="frame" x="0.0" y="39" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="39" width="274" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 주소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntw-QU-YeM">
-                                        <rect key="frame" x="0.0" y="78" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="78" width="274" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="010-9164-5018" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-Jf-XGL">
-                                        <rect key="frame" x="0.0" y="117" width="200" height="24"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="010-1234-1234" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-89-fSh">
+                                        <rect key="frame" x="0.0" y="117" width="274" height="24"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="tel"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="www.naver.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RvD-Vg-oEp">
-                                        <rect key="frame" x="0.0" y="156" width="200" height="24"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="www.naver.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XjB-q6-xjV">
+                                        <rect key="frame" x="0.0" y="156" width="274" height="24"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="url"/>
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 ~ 18:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Fh-QDG">
-                                        <rect key="frame" x="0.0" y="195" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="195" width="274" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김도훈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5Z-h2-KXz">
-                                        <rect key="frame" x="0.0" y="234" width="200" height="24"/>
+                                        <rect key="frame" x="0.0" y="234" width="274" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="SJZ-F8-nri"/>
-                                </constraints>
                             </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0To-hv-gMw">
                                 <rect key="frame" x="40" y="567" width="343" height="195"/>
@@ -191,6 +188,7 @@
                             <constraint firstItem="EMx-p1-WFW" firstAttribute="bottom" secondItem="0To-hv-gMw" secondAttribute="bottom" constant="56" id="U3P-O2-p19"/>
                             <constraint firstItem="xce-dL-ap0" firstAttribute="top" secondItem="EMx-p1-WFW" secondAttribute="top" constant="50" id="V3q-Zk-Mdg"/>
                             <constraint firstItem="hee-ZO-adC" firstAttribute="leading" secondItem="EMx-p1-WFW" secondAttribute="leading" constant="10" id="f3S-S0-KSa"/>
+                            <constraint firstItem="EMx-p1-WFW" firstAttribute="trailing" secondItem="xce-dL-ap0" secondAttribute="trailing" constant="10" id="hD7-II-XHX"/>
                             <constraint firstItem="EMx-p1-WFW" firstAttribute="bottom" secondItem="hee-ZO-adC" secondAttribute="bottom" constant="20" id="i60-ff-lLU"/>
                             <constraint firstItem="EMx-p1-WFW" firstAttribute="trailing" secondItem="hee-ZO-adC" secondAttribute="trailing" constant="10" id="iyo-VL-JHl"/>
                             <constraint firstItem="i3f-UD-9YY" firstAttribute="top" secondItem="EMx-p1-WFW" secondAttribute="top" constant="50" id="pib-Bh-FAA"/>
@@ -201,8 +199,8 @@
                         <outlet property="containerView" destination="0To-hv-gMw" id="KOy-FM-Evb"/>
                         <outlet property="kindergartenAddress" destination="ntw-QU-YeM" id="LfO-Rd-OOd"/>
                         <outlet property="kindergartenBossName" destination="e5Z-h2-KXz" id="mJ5-F1-4lm"/>
-                        <outlet property="kindergartenCallNumber" destination="ezp-Jf-XGL" id="ggF-ZU-SSX"/>
-                        <outlet property="kindergartenHomepage" destination="RvD-Vg-oEp" id="ZnR-m9-pms"/>
+                        <outlet property="kindergartenCallNumber" destination="ABK-89-fSh" id="UdC-G3-J7V"/>
+                        <outlet property="kindergartenHomepage" destination="XjB-q6-xjV" id="Oqb-pa-iKU"/>
                         <outlet property="kindergartenName" destination="Cfb-bW-XMc" id="Kex-xT-ctz"/>
                         <outlet property="kindergartenTime" destination="VSv-Fh-QDG" id="B15-vK-Iu4"/>
                         <outlet property="pageControl" destination="hee-ZO-adC" id="qFJ-8a-Oqm"/>

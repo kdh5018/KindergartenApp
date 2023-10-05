@@ -15,7 +15,7 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var publicPrivate: UILabel!
     @IBOutlet weak var kindergartenAddress: UILabel!
     @IBOutlet weak var kindergartenCallNumber: UITextView!
-    @IBOutlet weak var kindergartenHomepage: UILabel!
+    @IBOutlet weak var kindergartenHomepage: UITextView!
     @IBOutlet weak var kindergartenTime: UILabel!
     @IBOutlet weak var kindergartenBossName: UILabel!
     
@@ -32,9 +32,14 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
         
         setupUI()
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(openURL))
+        let urlTap = UITapGestureRecognizer(target: self, action: #selector(openURL))
         kindergartenHomepage.isUserInteractionEnabled = true
-        kindergartenHomepage.addGestureRecognizer(tap)
+        kindergartenHomepage.addGestureRecognizer(urlTap)
+        
+        let callNumberTap = UITapGestureRecognizer(target: self, action: #selector(makePhoneCall))
+        kindergartenCallNumber.isUserInteractionEnabled = true
+        kindergartenCallNumber.addGestureRecognizer(callNumberTap)
+        
 
         pageControl.numberOfPages = embededPageVC?.vcArray.count ?? 0
         pageControl.currentPage = 0
@@ -43,24 +48,10 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
         embededPageVC?.currentPageChanged = { [weak self] currentPage in
             self?.pageControl.currentPage = currentPage
         }
-    
-        
-        if let callNumber = selectedKindergarten?.telno {
-            kindergartenCallNumber.text = callNumber
-            
-            // Tap Gesture Recognizer 생성 및 설정
-            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(callPhoneNumber(_:)))
-            
-            kindergartenCallNumber.isUserInteractionEnabled = true
-            kindergartenCallNumber.isEditable = false
-            kindergartenCallNumber.isSelectable = true
-            kindergartenCallNumber.dataDetectorTypes = .phoneNumber
-            kindergartenCallNumber.addGestureRecognizer(tapGestureRecognizer)
-            
-            
-        }
         
     }
+    
+    // url 연결 셀렉터
     @objc func openURL() {
         if let urlText = kindergartenHomepage.text,
            let encodedUrlString = urlText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
@@ -68,6 +59,30 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
             UIApplication.shared.open(url)
         }
     }
+    
+    // 전화연결 셀렉터
+    @objc func makePhoneCall() {
+        if let phoneNumber = extractPhoneNumber(from: kindergartenCallNumber.text) {
+            if let phoneURL = URL(string: "tel://\(phoneNumber)") {
+                UIApplication.shared.open(phoneURL)
+            }
+        }
+    }
+    
+    func extractPhoneNumber(from text: String?) -> String? {
+        guard let text = text else { return nil }
+        
+        // 텍스트에서 숫자가 아닌 문자를 제거
+        let digitsOnlyText = text.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+        
+        // 결과 문자열이 유효한 전화번호인지 확인
+        if digitsOnlyText.count >= 9 && digitsOnlyText.count <= 15 {
+            return digitsOnlyText
+        } else {
+            return nil
+        }
+    }
+    
     
     func setupUI() {
         kindergartenName.text = selectedKindergarten?.kindername
@@ -77,23 +92,6 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
         kindergartenHomepage.text = selectedKindergarten?.hpaddr
         kindergartenTime.text = selectedKindergarten?.opertime
         kindergartenBossName.text = selectedKindergarten?.ldgrname
-    }
-
-    @objc func callPhoneNumber(_ sender: UITapGestureRecognizer) {
-        if let phoneNumberLabel = sender.view as? UILabel,
-           let phoneNumber = phoneNumberLabel.text,
-           let url = URL(string: "tel://\(phoneNumber)"),
-           UIApplication.shared.canOpenURL(url) {
-                   switch sender.state {
-                   case .began:
-                       phoneNumberLabel.isHighlighted = true // 버튼이 눌린 것처럼 보임
-                   case .ended:
-                       UIApplication.shared.open(url, options: [:], completionHandler: nil)
-                       fallthrough // ended 상태에서는 항상 highlighted 상태를 해제해야 함
-                   default:
-                       phoneNumberLabel.isHighlighted = false // 버튼이 안눌린 것처럼 보임
-                   }
-               }
     }
 
 
