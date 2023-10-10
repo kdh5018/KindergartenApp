@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailVC: UIViewController, UIScrollViewDelegate {
+class DetailVC: UIViewController {
 
     var selectedKindergarten: KinderInfo?
     

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZN-Oq-tcX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,24 +19,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBW-sq-7OX">
-                                <rect key="frame" x="20" y="103" width="363" height="39.666666666666657"/>
+                                <rect key="frame" x="10" y="103" width="373" height="39.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-Gl-AXd">
-                                <rect key="frame" x="10" y="197.66666666666669" width="373" height="648.33333333333326"/>
+                                <rect key="frame" x="10" y="198.66666666666669" width="373" height="647.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-HH-UXW">
-                                <rect key="frame" x="10" y="152.66666666666666" width="373" height="35"/>
+                                <rect key="frame" x="10" y="152.66666666666666" width="373" height="36"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-8o-buH">
-                                        <rect key="frame" x="1" y="0.0" width="371" height="35"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-8o-buH">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="36"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqa-k3-Did">
-                                                <rect key="frame" x="0.0" y="0.0" width="87" height="35"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqa-k3-Did" customClass="Button" customModule="KindergartenApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="36"/>
+                                                <color key="backgroundColor" red="0.92156862745098034" green="0.94901960784313721" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                <color key="tintColor" red="0.094117647058823528" green="0.42745098039215684" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <menu key="menu" id="jeg-NI-eL2">
                                                     <children>
                                                         <command title="Item 1" id="3Tc-OK-w4A"/>
@@ -43,13 +47,19 @@
                                                     </children>
                                                 </menu>
                                                 <state key="normal" title="시/도"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="sidoBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05G-do-MlN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-Jk-IXI">
-                                                <rect key="frame" x="142" y="0.0" width="87" height="35"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-Jk-IXI" customClass="Button" customModule="KindergartenApp" customModuleProvider="target">
+                                                <rect key="frame" x="127.66666666666666" y="0.0" width="117.66666666666666" height="36"/>
+                                                <color key="backgroundColor" red="0.92156862750000001" green="0.94901960780000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <menu key="menu" id="7MT-eg-yei">
                                                     <children>
@@ -60,12 +70,23 @@
                                                 <state key="normal" title="시/군/구">
                                                     <color key="titleColor" systemColor="tintColor"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEo-QC-cPy">
-                                                <rect key="frame" x="284" y="0.0" width="87" height="35"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEo-QC-cPy" customClass="Button" customModule="KindergartenApp" customModuleProvider="target">
+                                                <rect key="frame" x="255.33333333333329" y="0.0" width="117.66666666666666" height="36"/>
+                                                <color key="backgroundColor" red="0.92156862750000001" green="0.94901960780000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="19"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="유치원 찾기"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="findKindergartenBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8L-Tb-Oo1"/>
                                                 </connections>
@@ -86,7 +107,9 @@
                         <constraints>
                             <constraint firstItem="ULS-Qu-Kig" firstAttribute="leading" secondItem="5C6-Gl-AXd" secondAttribute="leading" id="FCr-St-mVd"/>
                             <constraint firstItem="5C6-Gl-AXd" firstAttribute="top" secondItem="AA4-HH-UXW" secondAttribute="bottom" constant="10" id="LHj-hO-OwJ"/>
-                            <constraint firstItem="LBW-sq-7OX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Q1T-L3-bId"/>
+                            <constraint firstItem="LBW-sq-7OX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Q1T-L3-bId"/>
+                            <constraint firstItem="fbe-8o-buH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VCY-J2-T07"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fbe-8o-buH" secondAttribute="trailing" constant="10" id="Wyx-HH-FJu"/>
                             <constraint firstItem="AA4-HH-UXW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Zkx-ty-wkZ"/>
                             <constraint firstItem="ULS-Qu-Kig" firstAttribute="trailing" secondItem="5C6-Gl-AXd" secondAttribute="trailing" id="e0E-zh-GQs"/>
                             <constraint firstItem="AA4-HH-UXW" firstAttribute="top" secondItem="LBW-sq-7OX" secondAttribute="bottom" constant="10" id="eVT-U9-MRN"/>
@@ -133,6 +156,17 @@
             <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Nvb-Jk-IXI">
+            <size key="intrinsicContentSize" width="54" height="32"/>
+        </designable>
+        <designable name="mEo-QC-cPy">
+            <size key="intrinsicContentSize" width="89" height="36"/>
+        </designable>
+        <designable name="rqa-k3-Did">
+            <size key="intrinsicContentSize" width="61" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

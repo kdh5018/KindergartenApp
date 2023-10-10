@@ -101,11 +101,9 @@ class ViewController: UIViewController {
             self.sigunguPopupButton(selectedSidoName: self.selectedSidoName ?? "nil")
         }
 
-        let actions = sidos.map { sido in
-            UIAction(title: sido, handler: optionClosure)
+        let actions = Sido.allCases.map { sido in
+            UIAction(title: sido.rawValue, handler: optionClosure)
         }
-        
-//        print(#fileID, #function, #line, "- 초기 시도: \(selectedSidoName)")
         
         sidoButton.menu = UIMenu(children: actions)
         
@@ -132,74 +130,74 @@ class ViewController: UIViewController {
         
         switch selectedSidoName {
         case "서울특별시":
-            actions = seouls.map { seoul in
-                UIAction(title: seoul, handler: optionClosure)
+            actions = Seoul.allCases.map { seoul in
+                UIAction(title: seoul.rawValue, handler: optionClosure)
             }
 
         case "부산광역시":
-            actions = busans.map { busan in
-                UIAction(title: busan, handler: optionClosure)
+            actions = Busan.allCases.map { busan in
+                UIAction(title: busan.rawValue, handler: optionClosure)
             }
 
         case "대구광역시":
-            actions = daegus.map { daegu in
-                UIAction(title: daegu, handler: optionClosure)
+            actions = Daegu.allCases.map { daegu in
+                UIAction(title: daegu.rawValue, handler: optionClosure)
             }
         case "인천광역시":
-            actions = incheons.map { incheon in
-                UIAction(title: incheon, handler: optionClosure)
+            actions = Incheon.allCases.map { incheon in
+                UIAction(title: incheon.rawValue, handler: optionClosure)
             }
         case "광주광역시":
-            actions = gwangjus.map { gwangju in
-                UIAction(title: gwangju, handler: optionClosure)
+            actions = Gwangju.allCases.map { gwangju in
+                UIAction(title: gwangju.rawValue, handler: optionClosure)
             }
         case "대전광역시":
-            actions = daejeons.map { daejeon in
-                UIAction(title: daejeon, handler: optionClosure)
+            actions = Daejeon.allCases.map { daejeon in
+                UIAction(title: daejeon.rawValue, handler: optionClosure)
             }
         case "울산광역시":
-            actions = ulsans.map { ulsan in
-                UIAction(title: ulsan, handler: optionClosure)
+            actions = Ulsan.allCases.map { ulsan in
+                UIAction(title: ulsan.rawValue, handler: optionClosure)
             }
         case "세종특별자치시":
-            actions = sejongs.map { sejong in
-                UIAction(title: sejong, handler: optionClosure)
+            actions = Sejong.allCases.map { sejong in
+                UIAction(title: sejong.rawValue, handler: optionClosure)
             }
         case "경기도":
-            actions = gyeonggis.map { gyeonggi in
-                UIAction(title: gyeonggi, handler: optionClosure)
+            actions = Gyeonggi.allCases.map { gyeonggi in
+                UIAction(title: gyeonggi.rawValue, handler: optionClosure)
             }
         case "강원특별자치도":
-            actions = gangwons.map { gangwon in
-                UIAction(title: gangwon, handler: optionClosure)
+            actions = Gangwon.allCases.map { gangwon in
+                UIAction(title: gangwon.rawValue, handler: optionClosure)
             }
         case "충청북도":
-            actions = chungbuks.map { chungbuk in
-                UIAction(title: chungbuk, handler: optionClosure)
+            actions = Chungbuk.allCases.map { chungbuk in
+                UIAction(title: chungbuk.rawValue, handler: optionClosure)
             }
         case "충청남도":
-            actions = chungnams.map { chungnam in
-                UIAction(title: chungnam, handler: optionClosure)
+            actions = Chungnam.allCases.map { chungnam in
+                UIAction(title: chungnam.rawValue, handler: optionClosure)
             }
         case "전라북도":
-            actions = jeonbuks.map { jeonbuk in
-                UIAction(title: jeonbuk, handler: optionClosure)
+            actions = Jeonbuk.allCases.map { jeonbuk in
+                UIAction(title: jeonbuk.rawValue, handler: optionClosure)
             }
         case "전라남도":
-            actions = jeonnams.map { jeonnam in
-                UIAction(title: jeonnam, handler: optionClosure)
+            actions = Jeonnam.allCases.map { jeonnam in
+                UIAction(title: jeonnam.rawValue, handler: optionClosure)
             }
         case "경상북도":
-            actions = gyeongbuks.map { gyeongbuk in
-                UIAction(title: gyeongbuk, handler: optionClosure)
+            actions = Gyeongbuk.allCases.map { gyeongbuk in
+                UIAction(title: gyeongbuk.rawValue, handler: optionClosure)
             }
         case "경상남도":
-            actions = gyeongnams.map { gyeongnam in
-                UIAction(title: gyeongnam, handler: optionClosure)
+            actions = Gyeongnam.allCases.map { gyeongnam in
+                UIAction(title: gyeongnam.rawValue, handler: optionClosure)
             }
         case "제주특별자치도":
-            actions = jejus.map { jeju in
-                UIAction(title: jeju, handler: optionClosure)
+            actions = Jeju.allCases.map { jeju in
+                UIAction(title: jeju.rawValue, handler: optionClosure)
             }
 
 
@@ -220,12 +218,6 @@ class ViewController: UIViewController {
     
     // 내가 지정한 지역코드가 들어간 유치원 찾기 버튼
     @IBAction func findKindergartenBtnClicked(_ sender: UIButton) {
-        
-//        viewModel.isLoading.accept(true)
-        
-        if selectedSidoName != nil {
-            sigunguButton.isEnabled = true
-        }
 
         switch selectedSidoName {
         case "서울특별시":

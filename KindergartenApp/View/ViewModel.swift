@@ -30,7 +30,7 @@ class ViewModel {
     
     // 유치원 데이터 불러오기
     func fetchKindergarten(_ sidoCode: Int, _ ssgCode: Int) {
-        
+    
         self.isLoading.accept(true)
         self.induceKindergarten.accept(false)
         

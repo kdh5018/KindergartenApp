@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		760941922ACD2FC500C32D68 /* PageVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760941912ACD2FC500C32D68 /* PageVC.storyboard */; };
 		760941942ACD340900C32D68 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760941932ACD340900C32D68 /* DataController.swift */; };
-		760941962ACD4AA300C32D68 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760941952ACD4AA300C32D68 /* City.swift */; };
+		760941962ACD4AA300C32D68 /* Sido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760941952ACD4AA300C32D68 /* Sido.swift */; };
 		761E2C962ACBF45A00FF4738 /* Old3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E2C952ACBF45A00FF4738 /* Old3VC.swift */; };
 		761E2C982ACBF46C00FF4738 /* Old4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E2C972ACBF46C00FF4738 /* Old4VC.swift */; };
 		761E2C9A2ACBF47800FF4738 /* Old5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E2C992ACBF47800FF4738 /* Old5VC.swift */; };
@@ -41,12 +41,13 @@
 		768A713C2AA6F95000C3C032 /* KindergartenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A713B2AA6F95000C3C032 /* KindergartenCell.swift */; };
 		768A713E2AA7011E00C3C032 /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768A713D2AA7011E00C3C032 /* DetailVC.storyboard */; };
 		768A71402AA7015900C3C032 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768A713F2AA7015900C3C032 /* DetailVC.swift */; };
+		76B8D0F12ACEC7680073D1A5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8D0F02ACEC7680073D1A5 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		760941912ACD2FC500C32D68 /* PageVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PageVC.storyboard; sourceTree = "<group>"; };
 		760941932ACD340900C32D68 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		760941952ACD4AA300C32D68 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		760941952ACD4AA300C32D68 /* Sido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sido.swift; sourceTree = "<group>"; };
 		761E2C952ACBF45A00FF4738 /* Old3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Old3VC.swift; sourceTree = "<group>"; };
 		761E2C972ACBF46C00FF4738 /* Old4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Old4VC.swift; sourceTree = "<group>"; };
 		761E2C992ACBF47800FF4738 /* Old5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Old5VC.swift; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		768A713B2AA6F95000C3C032 /* KindergartenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenCell.swift; sourceTree = "<group>"; };
 		768A713D2AA7011E00C3C032 /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
 		768A713F2AA7015900C3C032 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		76B8D0F02ACEC7680073D1A5 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,7 @@
 				768A71262AA6EBFA00C3C032 /* KindergartenAPI+Rx.swift */,
 				768A71282AA6EC1F00C3C032 /* KindergartenAPI.swift */,
 				760941932ACD340900C32D68 /* DataController.swift */,
-				760941952ACD4AA300C32D68 /* City.swift */,
+				760941952ACD4AA300C32D68 /* Sido.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -178,6 +180,7 @@
 			children = (
 				768A71352AA6F86C00C3C032 /* Nibbed.swift */,
 				768A71372AA6F8A000C3C032 /* ReuseIdentifiable.swift */,
+				76B8D0F02ACEC7680073D1A5 /* Button.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -275,7 +278,8 @@
 				761E2C9E2ACBF4BF00FF4738 /* OldSpecialVC.swift in Sources */,
 				765C14DE2AB8097F0001A245 /* ErrorResponse.swift in Sources */,
 				761E2C962ACBF45A00FF4738 /* Old3VC.swift in Sources */,
-				760941962ACD4AA300C32D68 /* City.swift in Sources */,
+				760941962ACD4AA300C32D68 /* Sido.swift in Sources */,
+				76B8D0F12ACEC7680073D1A5 /* Button.swift in Sources */,
 				768A71252AA6EBC100C3C032 /* KindergartenResponse.swift in Sources */,
 				761E2CA02ACBF4EE00FF4738 /* PageVC.swift in Sources */,
 				768A71362AA6F86C00C3C032 /* Nibbed.swift in Sources */,
