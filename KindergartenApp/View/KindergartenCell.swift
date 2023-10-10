@@ -15,6 +15,8 @@ class KindergartenCell: UITableViewCell {
     
     var cellData: KinderInfo? = nil
     
+    var viewModel =  ViewModel()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -38,8 +40,6 @@ class KindergartenCell: UITableViewCell {
             print(#fileID, #function, #line, "- 이름, 주소, 전화번호 없음")
             return
         }
-        
-        self.cellData = cellData
         
         self.kindergartenName.text = kindergartenName
         self.kindergartenAddress.text = kindergartenAddress

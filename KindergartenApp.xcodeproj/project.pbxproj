@@ -116,6 +116,25 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		767A08E52AD522B700F529CE /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				760941912ACD2FC500C32D68 /* PageVC.storyboard */,
+				761E2C9F2ACBF4EE00FF4738 /* PageVC.swift */,
+				7635EB5D2ACC018F0020F193 /* Old3VC.storyboard */,
+				761E2C952ACBF45A00FF4738 /* Old3VC.swift */,
+				7635EB5F2ACC01A70020F193 /* Old4VC.storyboard */,
+				761E2C972ACBF46C00FF4738 /* Old4VC.swift */,
+				7635EB612ACC01C10020F193 /* Old5VC.storyboard */,
+				761E2C992ACBF47800FF4738 /* Old5VC.swift */,
+				7635EB632ACC01D80020F193 /* OldMixVC.storyboard */,
+				761E2C9B2ACBF4A500FF4738 /* OldMixVC.swift */,
+				7635EB652ACC020A0020F193 /* OldSpecialVC.storyboard */,
+				761E2C9D2ACBF4BF00FF4738 /* OldSpecialVC.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
 		768A71042AA6EAA300C3C032 = {
 			isa = PBXGroup;
 			children = (
@@ -159,18 +178,7 @@
 				768A713F2AA7015900C3C032 /* DetailVC.swift */,
 				768A71392AA6F90400C3C032 /* KindergartenCell.xib */,
 				768A713B2AA6F95000C3C032 /* KindergartenCell.swift */,
-				760941912ACD2FC500C32D68 /* PageVC.storyboard */,
-				761E2C9F2ACBF4EE00FF4738 /* PageVC.swift */,
-				7635EB5D2ACC018F0020F193 /* Old3VC.storyboard */,
-				761E2C952ACBF45A00FF4738 /* Old3VC.swift */,
-				7635EB5F2ACC01A70020F193 /* Old4VC.storyboard */,
-				761E2C972ACBF46C00FF4738 /* Old4VC.swift */,
-				7635EB612ACC01C10020F193 /* Old5VC.storyboard */,
-				761E2C992ACBF47800FF4738 /* Old5VC.swift */,
-				7635EB632ACC01D80020F193 /* OldMixVC.storyboard */,
-				761E2C9B2ACBF4A500FF4738 /* OldMixVC.swift */,
-				7635EB652ACC020A0020F193 /* OldSpecialVC.storyboard */,
-				761E2C9D2ACBF4BF00FF4738 /* OldSpecialVC.swift */,
+				767A08E52AD522B700F529CE /* PageView */,
 			);
 			path = View;
 			sourceTree = "<group>";

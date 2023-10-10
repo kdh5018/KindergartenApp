@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,54 +17,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Pq-Ic-jpS">
-                                <rect key="frame" x="10" y="69" width="373" height="124"/>
+                                <rect key="frame" x="10" y="69" width="373" height="126"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LRj-vv-Isq">
-                                        <rect key="frame" x="0.0" y="0.0" width="215" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240.66666666666663" height="36.666666666666664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 학급수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-yo-pXd">
-                                                <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="194.33333333333334" height="36.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbc-Wj-WyX">
-                                                <rect key="frame" x="182.66666666666666" y="0.0" width="32.333333333333343" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <rect key="frame" x="202.33333333333334" y="0.0" width="38.333333333333343" height="36.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2rv-Ib-gEU">
-                                        <rect key="frame" x="0.0" y="44" width="266.66666666666669" height="36"/>
+                                        <rect key="frame" x="0.0" y="44.666666666666671" width="292.33333333333331" height="36.666666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 모집정원수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0L-CK-e2I">
-                                                <rect key="frame" x="0.0" y="0.0" width="226.33333333333334" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="246" height="36.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coL-Yw-0CO">
-                                                <rect key="frame" x="234.33333333333334" y="0.0" width="32.333333333333343" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <rect key="frame" x="254.00000000000003" y="0.0" width="38.333333333333343" height="36.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f2l-3f-Nsc">
-                                        <rect key="frame" x="0.0" y="88" width="215" height="36"/>
+                                        <rect key="frame" x="0.0" y="89.333333333333343" width="240.66666666666663" height="36.666666666666657"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 3세 유아수: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONP-jW-EKD">
-                                                <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="194.33333333333334" height="36.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34T-qz-vFE">
-                                                <rect key="frame" x="182.66666666666666" y="0.0" width="32.333333333333343" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <rect key="frame" x="202.33333333333334" y="0.0" width="38.333333333333343" height="36.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -75,7 +74,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qib-UB-jcx"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" red="1" green="0.8077465168808553" blue="0.77252120303520566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="7Pq-Ic-jpS" firstAttribute="leading" secondItem="qib-UB-jcx" secondAttribute="leading" constant="10" id="6tL-7M-GOr"/>
                             <constraint firstItem="7Pq-Ic-jpS" firstAttribute="top" secondItem="qib-UB-jcx" secondAttribute="top" constant="10" id="H3T-hu-J2H"/>
@@ -93,9 +92,4 @@
             <point key="canvasLocation" x="-1121" y="672"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

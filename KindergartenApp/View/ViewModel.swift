@@ -28,6 +28,16 @@ class ViewModel {
     
     var disposeBag = DisposeBag()
     
+    // isLoading 재사용
+    init(){
+        isLoading
+            .filter{ $0 == true }
+            .bind(onNext: { _ in
+                self.kinderInfo.accept([])
+            }).disposed(by: disposeBag)
+    }
+    
+    
     // 유치원 데이터 불러오기
     func fetchKindergarten(_ sidoCode: Int, _ ssgCode: Int) {
     
@@ -47,10 +57,9 @@ class ViewModel {
             })
             .subscribe(onNext: { (response: KindergartenResponse) in
                 guard let kinderInfo = response.kinderInfo else { return }
+                // 커스텀 바인더 만들어서 정리
                 self.kinderInfo.accept(kinderInfo)
                 self.scrollToTop.onNext(())
-                
-                self.isLoading.accept(false)
             })
                 .disposed(by: disposeBag)
     }

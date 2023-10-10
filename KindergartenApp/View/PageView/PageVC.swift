@@ -33,8 +33,8 @@ class PageVC: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dataSource = self
-        delegate = self
+        self.dataSource = self
+        self.delegate = self
         
         if let firstVC = vcArray.first {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)

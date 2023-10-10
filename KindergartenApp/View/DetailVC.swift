@@ -23,8 +23,10 @@ class DetailVC: UIViewController {
 
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var embededPageVC: PageVC? {
-        return children.first(where: { $0 is PageVC}) as? PageVC
+    var embeddedPageVC: PageVC? {
+        return children.first(where: { childVC in
+            return childVC is PageVC
+        }) as? PageVC
     }
     
     override func viewDidLoad() {
@@ -39,17 +41,22 @@ class DetailVC: UIViewController {
         let callNumberTap = UITapGestureRecognizer(target: self, action: #selector(makePhoneCall))
         kindergartenCallNumber.isUserInteractionEnabled = true
         kindergartenCallNumber.addGestureRecognizer(callNumberTap)
-        
 
-        pageControl.numberOfPages = embededPageVC?.vcArray.count ?? 0
+        pageControl.numberOfPages = embeddedPageVC?.vcArray.count ?? 0
         pageControl.currentPage = 0
         pageControl.isUserInteractionEnabled = false
         
-        embededPageVC?.currentPageChanged = { [weak self] currentPage in
+        embeddedPageVC?.currentPageChanged = { [weak self] currentPage in
             self?.pageControl.currentPage = currentPage
         }
         
+        // 컨테이너뷰 corner radius 설정
+        containerView.layer.cornerRadius = 10
+        containerView.clipsToBounds = true
+        
     }
+    
+    
     
     // url 연결 셀렉터
     @objc func openURL() {
@@ -92,6 +99,9 @@ class DetailVC: UIViewController {
         kindergartenHomepage.text = selectedKindergarten?.hpaddr
         kindergartenTime.text = selectedKindergarten?.opertime
         kindergartenBossName.text = selectedKindergarten?.ldgrname
+        
+        self.kindergartenAddress.numberOfLines = 0
+        self.kindergartenAddress.lineBreakStrategy = .hangulWordPriority
     }
 
 

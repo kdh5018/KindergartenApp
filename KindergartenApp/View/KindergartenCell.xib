@@ -17,64 +17,64 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q86-LA-DqZ">
-                        <rect key="frame" x="10" y="33" width="72.333333333333329" height="133"/>
+                        <rect key="frame" x="10" y="33" width="78.666666666666671" height="133"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원명 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dd-yo-FX7">
-                                <rect key="frame" x="0.0" y="0.0" width="72.333333333333329" height="37.666666666666664"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="37.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-v1-ify">
-                                <rect key="frame" x="0.0" y="47.666666666666671" width="72.333333333333329" height="37.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="47.666666666666671" width="78.666666666666671" height="37.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호 : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-yc-aGr">
-                                <rect key="frame" x="0.0" y="95.333333333333343" width="72.333333333333329" height="37.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="95.333333333333343" width="78.666666666666671" height="37.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-Gu-9WY">
-                        <rect key="frame" x="87.333333333333343" y="33" width="107.33333333333334" height="133"/>
+                        <rect key="frame" x="93.666666666666686" y="33" width="109" height="133"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZs-T4-wmO">
-                                <rect key="frame" x="0.0" y="0.0" width="107.33333333333333" height="37.666666666666664"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="109" height="37.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 주소" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsO-Zw-63Y">
-                                <rect key="frame" x="0.0" y="47.666666666666671" width="107.33333333333333" height="37.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="0.0" y="47.666666666666671" width="109" height="37.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유치원 전화번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUV-tc-YRS">
-                                <rect key="frame" x="0.0" y="95.333333333333343" width="107.33333333333333" height="37.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="95.333333333333343" width="109" height="37.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hm-J7-qVV" customClass="Button" customModule="KindergartenApp" customModuleProvider="target">
-                        <rect key="frame" x="398" y="85" width="100" height="26"/>
+                        <rect key="frame" x="398" y="151" width="100" height="28"/>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.94901960780000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="gqT-11-Y2H"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
                         <color key="tintColor" red="0.094117647060000004" green="0.42745098040000001" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="자세히 보기 &gt;"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="16"/>
+                                <real key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
@@ -88,9 +88,8 @@
                     <constraint firstItem="Q86-LA-DqZ" firstAttribute="top" secondItem="slm-qh-MZL" secondAttribute="top" constant="33" id="UaC-5T-V29"/>
                     <constraint firstItem="Sc0-Gu-9WY" firstAttribute="leading" secondItem="Q86-LA-DqZ" secondAttribute="trailing" constant="5" id="anl-wX-2SG"/>
                     <constraint firstItem="Q86-LA-DqZ" firstAttribute="leading" secondItem="slm-qh-MZL" secondAttribute="leading" constant="10" id="ap7-Iu-Im1"/>
-                    <constraint firstItem="4hm-J7-qVV" firstAttribute="top" secondItem="slm-qh-MZL" secondAttribute="top" constant="85" id="bh5-fS-Nce"/>
                     <constraint firstItem="Sc0-Gu-9WY" firstAttribute="top" secondItem="slm-qh-MZL" secondAttribute="top" constant="33" id="nhL-yW-BIM"/>
-                    <constraint firstItem="wsO-Zw-63Y" firstAttribute="top" secondItem="4hm-J7-qVV" secondAttribute="bottom" constant="-30.333333333333329" id="uop-gd-A8q"/>
+                    <constraint firstAttribute="bottom" secondItem="4hm-J7-qVV" secondAttribute="bottom" constant="20" id="vEg-ke-TFk"/>
                     <constraint firstAttribute="bottom" secondItem="Q86-LA-DqZ" secondAttribute="bottom" constant="33" id="ydL-16-g0B"/>
                 </constraints>
             </tableViewCellContentView>
@@ -104,7 +103,7 @@
     </objects>
     <designables>
         <designable name="4hm-J7-qVV">
-            <size key="intrinsicContentSize" width="72" height="28"/>
+            <size key="intrinsicContentSize" width="77" height="28"/>
         </designable>
     </designables>
 </document>
