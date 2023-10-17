@@ -432,13 +432,19 @@ class ViewModel {
 extension Reactive where Base: ViewModel {
     var kinderInfo: Binder<KinderInfo> {
         return Binder(self.base) { viewModel, kinderInfo in
-                .subscribe(onNext: { (response: KindergartenResponse) in
-                    guard let kinderInfo = response.kinderInfo else { return }
-                    self.kinderInfo.accept(kinderInfo)
-                    self.scrollToTop.onNext(())
-                    self.isLoading.accept(false)
-                })
-                .disposed(by: disposeBag)
+            viewModel.kinderInfo.accept(kinderInfo)
+        }
+    }
+
+    var scrollToTop: Binder<Void> {
+        return Binder(self.base) { viewModel, _ in
+            viewModel.scrollToTop.onNext(())
+        }
+    }
+
+    var isLoading: Binder<Bool> {
+        return Binder(self.base) { viewModel, isLoading in
+            viewModel.isLoading.accept(isLoading)
         }
     }
 }

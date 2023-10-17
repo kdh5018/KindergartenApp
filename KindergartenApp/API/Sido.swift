@@ -28,6 +28,9 @@ enum Sido: String, CaseIterable {
     case gyeongnam = "경상남도"
     case jeju = "제주특별자치도"
 }
+enum None: String, CaseIterable {
+    case none = "시/군/구"
+}
 
 enum Seoul: String, CaseIterable {
     case none = "시/군/구"

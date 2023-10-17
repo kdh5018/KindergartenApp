@@ -12,8 +12,6 @@ import RxCocoa
 
 class ViewController: UIViewController {
     
-    #warning("시/도 버튼에서 시/도 안눌리게나 누르면 에러처리하기")
-    
     @IBOutlet weak var myTableView: UITableView!
     
     @IBOutlet weak var sidoButton: UIButton!
@@ -40,7 +38,7 @@ class ViewController: UIViewController {
         let view: UIView = UIView(frame: CGRect(x: 0, y: 0, width: myTableView.bounds.width, height: 300))
         
         let label: UILabel = UILabel()
-        label.text = "원하는 지역을 선택해주세요👶🏻 \n시/구 → 시/군/구 순서로 선택해주세요🐥"
+        label.text = "원하는 지역을 선택해주세요👶🏻 \n시/도 → 시/군/구 순서로 선택해주세요🐥"
         label.numberOfLines = 2
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -105,12 +103,15 @@ class ViewController: UIViewController {
             self.selectedSidoName = action.title
             self.sigunguPopupButtonTapped(selectedSidoName: self.selectedSidoName ?? "nil")
         }
+        
+        
 
         let actions = Sido.allCases.map { sido in
             UIAction(title: sido.rawValue, handler: optionClosure)
         }
         
         sidoButton.menu = UIMenu(children: actions)
+        
         
         sidoButton.showsMenuAsPrimaryAction = true
         sidoButton.changesSelectionAsPrimaryAction = true
@@ -122,8 +123,6 @@ class ViewController: UIViewController {
     // !! edit function name
     func sigunguPopupButtonTapped(selectedSidoName: String) {
         
-        print(#fileID, #function, #line, "- 설정된 시도: \(selectedSidoName)")
-        
         if selectedSidoName != nil {
             sigunguButton.isUserInteractionEnabled = true
         }
@@ -131,16 +130,17 @@ class ViewController: UIViewController {
         let action = { (action: UIAction) in
             print(action.title)
             self.selectedSidogunName = action.title
+            
         }
-        
+
         let actions = makeLocationSelectAction(selectedSidoName, optionClosure: action)
+        
         
         sigunguButton.menu = UIMenu(children: actions)
         
+        
         sigunguButton.showsMenuAsPrimaryAction = true
         sigunguButton.changesSelectionAsPrimaryAction = true
-        
-        
         
     }
     
@@ -150,15 +150,8 @@ class ViewController: UIViewController {
                 
                 switch selectedSidoName {
                 case "시/도":
-                    do {
-                        let menu = ["서울특별시", "부산광역시", "대구광역시", "인천광역시", "광주광역시", "대전광역시", "울산광역시", "세종특별자치시", "경기도", "강원특별자치도", "충청북도", "충청남도", "전라북도", "전라남도", "경상북도", "경상남도", "제주특별자치도"]
-                        
-                        try validateMenuDefaultSelection(menu)
-                        
-                    } catch MenuError.invalidDefaultSelection(let message) {
-                        print("Caught an error: \(message)")
-                    } catch {
-                        print("Caught an unexpected error")
+                    actions = None.allCases.map{ no in
+                        UIAction(title: no.rawValue, handler: optionClosure)
                     }
 
                 case "서울특별시":
