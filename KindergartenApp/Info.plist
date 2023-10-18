@@ -21,6 +21,8 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 	<key>apiKey</key>
 	<string>${apiKey}</string>
 	<key>baseURL</key>

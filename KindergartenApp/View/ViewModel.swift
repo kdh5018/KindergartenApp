@@ -428,23 +428,23 @@ class ViewModel {
     
 }
 
-//MARK: - 커스텀 바인더
-extension Reactive where Base: ViewModel {
-    var kinderInfo: Binder<KinderInfo> {
-        return Binder(self.base) { viewModel, kinderInfo in
-            viewModel.kinderInfo.accept(kinderInfo)
-        }
-    }
-
-    var scrollToTop: Binder<Void> {
-        return Binder(self.base) { viewModel, _ in
-            viewModel.scrollToTop.onNext(())
-        }
-    }
-
-    var isLoading: Binder<Bool> {
-        return Binder(self.base) { viewModel, isLoading in
-            viewModel.isLoading.accept(isLoading)
-        }
-    }
-}
+////MARK: - 커스텀 바인더
+//extension Reactive where Base: ViewModel {
+//    var kinderInfo: Binder<KinderInfo> {
+//        return Binder(self.base) { viewModel, kinderInfo in
+//            viewModel.kinderInfo.accept(kinderInfo)
+//        }
+//    }
+//
+//    var scrollToTop: Binder<Void> {
+//        return Binder(self.base) { viewModel, _ in
+//            viewModel.scrollToTop.onNext(())
+//        }
+//    }
+//
+//    var isLoading: Binder<Bool> {
+//        return Binder(self.base) { viewModel, isLoading in
+//            viewModel.isLoading.accept(isLoading)
+//        }
+//    }
+//}
