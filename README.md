@@ -5,7 +5,7 @@
 </p>
 
 ## App Store 주소
-https://apps.apple.com/kr/app/%EC%95%BD%EB%A8%B9%EC%97%88%EB%8B%88/id6449581332
+https://apps.apple.com/kr/app/%EC%A0%84%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%EC%A0%95%EB%B3%B4%EC%A1%B0%ED%9A%8C/id6469683220
 
 <p>
   <img src="https://github.com/kdh5018/kdh5018/assets/104900735/7cef5f0b-e1fc-4bbe-bc7b-3bed342f9558" width="160.5", height="347.25">
